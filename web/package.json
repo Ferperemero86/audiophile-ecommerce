@@ -18,7 +18,9 @@
     "lodash": "^4.17.21",
     "next": "10.2.3",
     "next-with-apollo": "^5.1.1",
+    "postgraphile-plugin-connection-filter": "^2.2.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tslib": "^1.14.1"
   }
 }

@@ -3,11 +3,11 @@ import gql from "graphql-tag";
 
 const USERS_QUERY = gql`
   query customers {
-    getUser(id: 4) {
-      id
-      name
-      age
-      active
+    __schema {
+      directives {
+        name 
+        description
+      }
     }
   }
 `;

@@ -3,9 +3,10 @@ import gql from "graphql-tag";
 
 const USERS_QUERY = gql`
   query customers {
-    getUsers {
-      id
-      name
+    allUsers(condition: {id: 1}) {
+      nodes {
+        email
+      }
     }
   }
 `;

@@ -4,9 +4,11 @@ const config = {
   client: "pg",
   connection: "postgres://postgres:postgres@db:5432/audiophile",
   migrations: {
-    directory: path.join(__dirname, "src/db/migrations"),
-    tableName: "knex_migrations",
+    directory: path.join(__dirname, "src/db/migrations")
   },
+  seeds: {
+    directory: path.join(__dirname, "src/db/seeds")
+  }
 };
 
 module.exports = config;

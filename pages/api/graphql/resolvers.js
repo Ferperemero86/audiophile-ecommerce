@@ -1,20 +1,14 @@
 import lodash from "lodash/collection";
 
-const users = [
-    {id: 1, name: "barney", age: 36, active: true},
-    {id: 2, name: "fred", age: 40, active: false},
-    {id: 3, name: "pebbles", age: 1, active: true},
-    {id: 4, name: "marc", age: 14, active: true},
-];
-
+import { data } from "../data";
 
 const resolvers = {
-    Query: {
-        getUser: (_, {id}) => {
-            return lodash.find(users, {id})
-        },
-        getUsers: (_, args) => users
-    }
+	Query: {
+		getProduct: (_, { id }) => {
+			return lodash.find(data, { id });
+		},
+		getProducts: (_, args) => data
+	}
 };
 
 export default resolvers;

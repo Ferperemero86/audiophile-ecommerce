@@ -4,9 +4,12 @@ export const data = [
 		slug: "yx1-earphones",
 		name: "YX1 Wireless Earphones",
 		image: {
-			mobile: "./assets/product-yx1-earphones/mobile/image-product.jpg",
-			tablet: "./assets/product-yx1-earphones/tablet/image-product.jpg",
-			desktop: "./assets/product-yx1-earphones/desktop/image-product.jpg"
+			mobile:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925671/audiophile/product-yx1-earphones/mobile/un9lf2ru6f5t8r3zx5pd.jpg",
+			tablet:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/tablet/qajnu9rb3tms3o2ba0tv.jpg",
+			desktop:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/desktop/tmskflvlhkgrcbyz95ms.jpg"
 		},
 		category: "earphones",
 		new: true,
@@ -39,19 +42,28 @@ export const data = [
 		],
 		gallery: {
 			first: {
-				mobile: "./assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
-				tablet: "./assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
-				desktop: "./assets/product-yx1-earphones/desktop/image-gallery-1.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925671/audiophile/product-yx1-earphones/mobile/use7pvjvivoidqsa161o.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/tablet/f052m5c2im8ick9jm8uv.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/desktop/fgtlyydnybwdl2xb1pw1.jpg"
 			},
 			second: {
-				mobile: "./assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
-				tablet: "./assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
-				desktop: "./assets/product-yx1-earphones/desktop/image-gallery-2.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-yx1-earphones/mobile/tfji13acuxxdgmbosq6i.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925668/audiophile/product-yx1-earphones/tablet/ngolyqxisoq9rqygpq32.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/desktop/qy4fjiia7rehrlqzgh0x.jpg"
 			},
 			third: {
-				mobile: "./assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
-				tablet: "./assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
-				desktop: "./assets/product-yx1-earphones/desktop/image-gallery-3.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/mobile/ott0nvpd3ecpkvfhz2oy.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/tablet/lvtpbag5wvijxfy0rezs.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/desktop/z2xyaj1uzs4rvrodx8gv.jpg"
 			}
 		},
 		others: [
@@ -59,27 +71,36 @@ export const data = [
 				slug: "xx99-mark-one-headphones",
 				name: "XX99 Mark I",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/i6n25imxcaz7fpqn3fhw.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/tohbivti7nlmd9cahnak.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/wdts8l0mu9zhgl6aipyh.png"
 				}
 			},
 			{
 				slug: "xx59-headphones",
 				name: "XX59",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx59-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/xk1rfjtj7uri2erardoo.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/yhqy4gfj9rd3zcwlthck.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/lzjgqgezya2ca2l9wkeg.jpg"
 				}
 			},
 			{
 				slug: "zx9-speaker",
 				name: "ZX9 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx9-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925686/audiophile/shared/mobile/cx39sssauqippamy5vc8.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/t6vwwmfzvqrjmgfjled8.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/aowwj35cqkej9ow8q4tw.jpg"
 				}
 			}
 		]
@@ -89,9 +110,12 @@ export const data = [
 		slug: "xx59-headphones",
 		name: "XX59 Headphones",
 		image: {
-			mobile: "./assets/product-xx59-headphones/mobile/image-product.jpg",
-			tablet: "./assets/product-xx59-headphones/tablet/image-product.jpg",
-			desktop: "./assets/product-xx59-headphones/desktop/image-product.jpg"
+			mobile:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx59-headphones/mobile/bauvqowreedkegjcgdyz.jpg",
+			tablet:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/tablet/ytdbsdyarmwafgiavkum.jpg",
+			desktop:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925659/audiophile/product-xx59-headphones/desktop/yiepq2206xjhxuyff5ki.jpg"
 		},
 		category: "headphones",
 		new: false,
@@ -120,19 +144,28 @@ export const data = [
 		],
 		gallery: {
 			first: {
-				mobile: "./assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
-				tablet: "./assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
-				desktop: "./assets/product-xx59-headphones/desktop/image-gallery-1.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx59-headphones/mobile/pgkgtn2c21hq3sldbhzn.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/tablet/rwfocyok66zqtd02tto1.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925659/audiophile/product-xx59-headphones/desktop/dnxqg41mo6w5bbgwsnja.jpg"
 			},
 			second: {
-				mobile: "./assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
-				tablet: "./assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
-				desktop: "./assets/product-xx59-headphones/desktop/image-gallery-2.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925659/audiophile/product-xx59-headphones/mobile/rr9zwyi5xozvgh6ofpd7.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925657/audiophile/product-xx59-headphones/tablet/alflpv1q2mff6dlaposx.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/desktop/a1mu895ibuo8dbmc1qss.jpg"
 			},
 			third: {
-				mobile: "./assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
-				tablet: "./assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
-				desktop: "./assets/product-xx59-headphones/desktop/image-gallery-3.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx59-headphones/mobile/bmarh0xg2ojgq3p8mq90.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925657/audiophile/product-xx59-headphones/tablet/rlltefst8qwgplygzokw.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/desktop/yjhmysftmzhmietvnkr5.jpg"
 			}
 		},
 		others: [
@@ -140,27 +173,36 @@ export const data = [
 				slug: "xx99-mark-two-headphones",
 				name: "XX99 Mark II",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/nz7wtgle7gqczykpthnv.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/milzsye3h2neazny0oy0.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/pvong0ylzyvmfqcdgegf.jpg"
 				}
 			},
 			{
 				slug: "xx99-mark-one-headphones",
 				name: "XX99 Mark I",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/i6n25imxcaz7fpqn3fhw.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/tohbivti7nlmd9cahnak.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/bgwxybmhmpje90rrc8y8.jpg"
 				}
 			},
 			{
 				slug: "zx9-speaker",
 				name: "ZX9 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx9-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925686/audiophile/shared/mobile/cx39sssauqippamy5vc8.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/t6vwwmfzvqrjmgfjled8.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/aowwj35cqkej9ow8q4tw.jpg"
 				}
 			}
 		]
@@ -171,9 +213,9 @@ export const data = [
 		name: "XX99 Mark I Headphones",
 		image: {
 			mobile:
-				"./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925664/audiophile/product-xx99-mark-one-headphones/mobile/sq4foahiodqxa9vu5rpo.jpg",
 			tablet:
-				"./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/tablet/o6sr5czz4o6xiyq1pybq.jpg",
 			desktop:
 				"./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
 		},
@@ -205,27 +247,27 @@ export const data = [
 		gallery: {
 			first: {
 				mobile:
-					"./assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925663/audiophile/product-xx99-mark-one-headphones/mobile/r3c5gqnvpdaa9kbv1yto.jpg",
 				tablet:
-					"./assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx99-mark-one-headphones/tablet/mmxdazffqfcrtsrctycz.jpg",
 				desktop:
-					"./assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925662/audiophile/product-xx99-mark-one-headphones/desktop/jhdumu9ywpval4rwzxnh.jpg"
 			},
 			second: {
 				mobile:
-					"./assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925663/audiophile/product-xx99-mark-one-headphones/mobile/zkgulwbtgzyqzxoujzdt.jpg",
 				tablet:
-					"./assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/tablet/yysrbwntpw43abmf6pfz.jpg",
 				desktop:
-					"./assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/desktop/ms0xzunvkfrlfko2vbgm.jpg"
 			},
 			third: {
 				mobile:
-					"./assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925663/audiophile/product-xx99-mark-one-headphones/mobile/ab7uaelaio8hiwqy6obe.jpg",
 				tablet:
-					"./assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/tablet/hxs4grs0ztlsbfohklzi.jpg",
 				desktop:
-					"./assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925663/audiophile/product-xx99-mark-one-headphones/desktop/qdjyyfohddgdpspzyryw.jpg"
 			}
 		},
 		others: [
@@ -233,27 +275,36 @@ export const data = [
 				slug: "xx99-mark-two-headphones",
 				name: "XX99 Mark II",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/nz7wtgle7gqczykpthnv.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/milzsye3h2neazny0oy0.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/pvong0ylzyvmfqcdgegf.jpg"
 				}
 			},
 			{
 				slug: "xx59-headphones",
 				name: "XX59",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx59-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/xk1rfjtj7uri2erardoo.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/yhqy4gfj9rd3zcwlthck.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/lzjgqgezya2ca2l9wkeg.jpg"
 				}
 			},
 			{
 				slug: "zx9-speaker",
 				name: "ZX9 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx9-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925686/audiophile/shared/mobile/cx39sssauqippamy5vc8.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/t6vwwmfzvqrjmgfjled8.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/aowwj35cqkej9ow8q4tw.jpg"
 				}
 			}
 		]
@@ -264,11 +315,11 @@ export const data = [
 		name: "XX99 Mark II Headphones",
 		image: {
 			mobile:
-				"./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925668/audiophile/product-xx99-mark-two-headphones/mobile/g0yfu8pg8nexejl39rw7.jpg",
 			tablet:
-				"./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925665/audiophile/product-xx99-mark-two-headphones/tablet/nbby0zny8ctcaoog5kp2.jpg",
 			desktop:
-				"./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925666/audiophile/product-xx99-mark-two-headphones/desktop/iyzeakt7uykoezxxvtjm.jpg"
 		},
 		category: "headphones",
 		new: true,
@@ -302,27 +353,27 @@ export const data = [
 		gallery: {
 			first: {
 				mobile:
-					"./assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925668/audiophile/product-xx99-mark-two-headphones/mobile/s2qsqog05ahj9ix98aik.jpg",
 				tablet:
-					"./assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925665/audiophile/product-xx99-mark-two-headphones/tablet/m4tjicv4ujg3deobjzct.jpg",
 				desktop:
-					"./assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925665/audiophile/product-xx99-mark-two-headphones/desktop/iwzylygmthbll6kkdlws.jpg"
 			},
 			second: {
 				mobile:
-					"./assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925667/audiophile/product-xx99-mark-two-headphones/mobile/qbvbfbi8jibe5x0fwmnq.jpg",
 				tablet:
-					"./assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925664/audiophile/product-xx99-mark-two-headphones/tablet/sunxp1q1l69hgo7agn6i.jpg",
 				desktop:
-					"./assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925665/audiophile/product-xx99-mark-two-headphones/desktop/l8a8rwkh4brbfeoximck.jpg"
 			},
 			third: {
 				mobile:
-					"./assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925667/audiophile/product-xx99-mark-two-headphones/mobile/wmvcthmskdstk6mrolqp.jpg",
 				tablet:
-					"./assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925666/audiophile/product-xx99-mark-two-headphones/tablet/uq813pg16iuv0ihktk5q.jpg",
 				desktop:
-					"./assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925666/audiophile/product-xx99-mark-two-headphones/desktop/avdsbshjiyuuyiyc9ymd.jpg"
 			}
 		},
 		others: [
@@ -330,27 +381,36 @@ export const data = [
 				slug: "xx99-mark-one-headphones",
 				name: "XX99 Mark I",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/i6n25imxcaz7fpqn3fhw.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/tohbivti7nlmd9cahnak.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/bgwxybmhmpje90rrc8y8.jpg"
 				}
 			},
 			{
 				slug: "xx59-headphones",
 				name: "XX59",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx59-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/xk1rfjtj7uri2erardoo.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/yhqy4gfj9rd3zcwlthck.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/lzjgqgezya2ca2l9wkeg.jpg"
 				}
 			},
 			{
 				slug: "zx9-speaker",
 				name: "ZX9 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx9-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925686/audiophile/shared/mobile/cx39sssauqippamy5vc8.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/t6vwwmfzvqrjmgfjled8.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/aowwj35cqkej9ow8q4tw.jpg"
 				}
 			}
 		]
@@ -360,9 +420,12 @@ export const data = [
 		slug: "zx7-speaker",
 		name: "ZX7 Speaker",
 		image: {
-			mobile: "./assets/product-zx7-speaker/mobile/image-product.jpg",
-			tablet: "./assets/product-zx7-speaker/tablet/image-product.jpg",
-			desktop: "./assets/product-zx7-speaker/desktop/image-product.jpg"
+			mobile:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/mobile/uarwmcbo3vjmha3xfwak.jpg",
+			tablet:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/kpz1swvjkrxcnjsryen7.jpg",
+			desktop:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/desktop/p8lna9t99wixvzngdfix.jpg"
 		},
 		category: "speakers",
 		new: false,
@@ -395,19 +458,28 @@ export const data = [
 		],
 		gallery: {
 			first: {
-				mobile: "./assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
-				tablet: "./assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
-				desktop: "./assets/product-zx7-speaker/desktop/image-gallery-1.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925675/audiophile/product-zx7-speaker/mobile/a8twpoobya6e73snki4g.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/rozc7nrkqzgkt19lm5ys.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925673/audiophile/product-zx7-speaker/desktop/qsjazmbtvajvgl1vjshl.jpg"
 			},
 			second: {
-				mobile: "./assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
-				tablet: "./assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
-				desktop: "./assets/product-zx7-speaker/desktop/image-gallery-2.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925675/audiophile/product-zx7-speaker/mobile/sknc2kv3ji1mxzbjnkib.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/nplcpewmcidtfoqwmb5a.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925673/audiophile/product-zx7-speaker/desktop/nizqdjsho6dlf1x4271t.jpg"
 			},
 			third: {
-				mobile: "./assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
-				tablet: "./assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
-				desktop: "./assets/product-zx7-speaker/desktop/image-gallery-3.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925675/audiophile/product-zx7-speaker/mobile/lwhj49jll0cbangm2hif.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/khepuknovp7r38v9duyb.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925673/audiophile/product-zx7-speaker/desktop/hwx3tsjlbdcqna4vilrc.jpg"
 			}
 		},
 		others: [
@@ -415,27 +487,36 @@ export const data = [
 				slug: "zx9-speaker",
 				name: "ZX9 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx9-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925686/audiophile/shared/mobile/cx39sssauqippamy5vc8.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/t6vwwmfzvqrjmgfjled8.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/aowwj35cqkej9ow8q4tw.jpg"
 				}
 			},
 			{
 				slug: "xx99-mark-one-headphones",
 				name: "XX99 Mark I",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/i6n25imxcaz7fpqn3fhw.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/tohbivti7nlmd9cahnak.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/bgwxybmhmpje90rrc8y8.jpg"
 				}
 			},
 			{
 				slug: "xx59-headphones",
 				name: "XX59",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx59-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925685/audiophile/shared/mobile/xk1rfjtj7uri2erardoo.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/yhqy4gfj9rd3zcwlthck.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/lzjgqgezya2ca2l9wkeg.jpg"
 				}
 			}
 		]
@@ -445,9 +526,12 @@ export const data = [
 		slug: "zx9-speaker",
 		name: "ZX9 Speaker",
 		image: {
-			mobile: "./assets/product-zx9-speaker/mobile/image-product.jpg",
-			tablet: "./assets/product-zx9-speaker/tablet/image-product.jpg",
-			desktop: "./assets/product-zx9-speaker/desktop/image-product.jpg"
+			mobile:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/mobile/l1fibtlgud1ns7la7sko.jpg",
+			tablet:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925676/audiophile/product-zx9-speaker/tablet/h9i0euov3hbshfyiog06.jpg",
+			desktop:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925677/audiophile/product-zx9-speaker/desktop/fzzgovt7kghdwwrbd7e1.jpg"
 		},
 		category: "speakers",
 		new: true,
@@ -480,19 +564,28 @@ export const data = [
 		],
 		gallery: {
 			first: {
-				mobile: "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
-				tablet: "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
-				desktop: "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925678/audiophile/product-zx9-speaker/mobile/ijertikin09wog28fn2u.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925675/audiophile/product-zx9-speaker/tablet/l4rtsel09mu9d0b1nrzv.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925676/audiophile/product-zx9-speaker/desktop/v6zafhlmtw0kx3j3ojzp.jpg"
 			},
 			second: {
-				mobile: "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
-				tablet: "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
-				desktop: "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/mobile/hgcy0vfrebfaqmnooiqe.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/tablet/djjrx0pirg3xlbjdzvi2.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925677/audiophile/product-zx9-speaker/desktop/h1b3s0qtcehjirehhrmg.jpg"
 			},
 			third: {
-				mobile: "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
-				tablet: "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
-				desktop: "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/mobile/y9cejhbjjch6lql1nvl4.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925675/audiophile/product-zx9-speaker/tablet/nryejvupxwzjeajz6irb.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925677/audiophile/product-zx9-speaker/desktop/gvqxy7xf9ki7utuubcxo.jpg"
 			}
 		},
 		others: [
@@ -500,27 +593,36 @@ export const data = [
 				slug: "zx7-speaker",
 				name: "ZX7 Speaker",
 				image: {
-					mobile: "./assets/shared/mobile/image-zx7-speaker.jpg",
-					tablet: "./assets/shared/tablet/image-zx7-speaker.jpg",
-					desktop: "./assets/shared/desktop/image-zx7-speaker.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/mobile/uarwmcbo3vjmha3xfwak.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/kpz1swvjkrxcnjsryen7.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/desktop/p8lna9t99wixvzngdfix.jpg"
 				}
 			},
 			{
 				slug: "xx99-mark-one-headphones",
 				name: "XX99 Mark I",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925664/audiophile/product-xx99-mark-one-headphones/mobile/sq4foahiodqxa9vu5rpo.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/tablet/o6sr5czz4o6xiyq1pybq.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925663/audiophile/product-xx99-mark-one-headphones/desktop/eldjgjhuceokruimx8ee.jpg"
 				}
 			},
 			{
 				slug: "xx59-headphones",
 				name: "XX59",
 				image: {
-					mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-					tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-					desktop: "./assets/shared/desktop/image-xx59-headphones.jpg"
+					mobile:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx59-headphones/mobile/bauvqowreedkegjcgdyz.jpg",
+					tablet:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/tablet/ytdbsdyarmwafgiavkum.jpg",
+					desktop:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925659/audiophile/product-xx59-headphones/desktop/yiepq2206xjhxuyff5ki.jpg"
 				}
 			}
 		]

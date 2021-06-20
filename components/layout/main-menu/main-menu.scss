@@ -1,0 +1,20 @@
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include padding-y(2rem);
+    @include bg-color('primary');
+
+    &-menu {
+        display: none;
+
+        .menu-link {
+
+            @include color('second');
+        }
+
+        @include breakpoint-up('md') {
+            display: flex;
+        }
+    }
+}

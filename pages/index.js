@@ -57,5 +57,6 @@ export default function Home() {
 	if (!loading) {
 		console.log("DATA", data);
 	}
+
 	return <h1>Home</h1>;
 }

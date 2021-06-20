@@ -1,0 +1,82 @@
+//// COLORS ////
+
+$colors: (
+  'primary': hsl(0, 0%, 0%), // Pure Black
+  'second': hsl(255, 255%, 255%), // Pure White
+  'third': hsl(241, 241%, 241%), // Grey
+  'fourth': hsl(22, 65%, 57%) //Orange
+);
+
+
+//// FONTS ////
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap'); // Manrope font
+
+
+// Sizes
+$par-sizes: (
+  'sm': 0.9375rem,
+  'md': 1.125rem,
+  'lg': 2rem,
+);
+
+$heading-sizes: (
+  'xxsm': 0.8rem,
+  'xsm': 1.125rem,
+  'sm': 2rem,
+  'md': 2.5rem,
+  'lg': 3rem,
+  'xlg': 3.5rem,
+);
+
+$par-lh-sizes: (
+  'sm': 1.56rem,
+  'md': 1.75rem,
+);
+
+$heading-lh-sizes: (
+  'sm': 1.75rem,
+  'md': 3rem,
+  'lg': 3.5rem,
+);
+
+
+// Weight
+$font-weights: (
+  'sm': 400,
+  'md': 700,
+);
+
+
+// Family
+$font-family: (
+  'primary': 'Manrope'
+);
+
+
+//// MEDIA QUERIES ////
+$breakpoints-up: (
+  'sm': 21.875rem,
+  'md': 62rem,
+  'lg': 90rem,
+);
+
+$breakpoints-down: (
+  'md': 61.9375rem,
+  'lg': 89.9375rem,
+);
+
+
+//// SPACES ////
+
+$margin-y: (
+  'sm': 7.5rem,
+  'md': 9rem,
+  'lg': 12.5rem,
+);
+
+$padding-x: (
+  'sm': 1.5rem,
+  'md': 2.5rem,
+  'lg': 10rem,
+);
+

@@ -1,0 +1,12 @@
+.menu {
+    
+    &-link {
+
+        text-decoration: none;
+
+        &:not(:last-child) {
+
+            margin-right: 1.8rem;
+        }
+    }
+}

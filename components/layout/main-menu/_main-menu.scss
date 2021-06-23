@@ -1,0 +1,38 @@
+.main-menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  align-items: center;
+  @include padding-y(2rem);
+  @include bg-color('primary');
+
+  &-hamburger {
+
+    margin-right: 2rem;
+  }
+
+  &-menu {
+
+    display: none;
+
+    .menu-link {
+
+      @include color('second');
+    }
+
+    @include breakpoint-up('md') {
+      display: flex;
+    }
+
+  }
+
+  &-cart {
+
+    justify-self: end;
+  }
+
+  @include breakpoint-up('md') {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}

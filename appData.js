@@ -7,6 +7,9 @@ export const appData = {
 			url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/awc6wcbfjgdoqrv2rlxz.svg"
 		}
 	},
+	buttons: {
+		seeProduct: { label: "SEE PRODUCT" }
+	},
 	menus: {
 		mainMenu: {
 			links: [
@@ -15,6 +18,20 @@ export const appData = {
 				{ label: "Speakers", url: "/speakers" },
 				{ label: "Earphones", url: "/earphones" }
 			]
+		}
+	},
+	headers: {
+		headerPrimary: {
+			heading: "XX99 MARK HEADPHONES",
+			text: "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+			images: {
+				mobile:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925656/audiophile/home/mobile/mqewx1psittau4qzbias.jpg",
+				tablet:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925653/audiophile/home/tablet/kagpb7kzg7xaxdu9syew.jpg",
+				desktop:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925655/audiophile/home/desktop/queko3xmn24mhr6fg0yh.jpg"
+			}
 		}
 	}
 };

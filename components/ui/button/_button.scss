@@ -1,0 +1,6 @@
+.button {
+    padding: 1rem 2rem;
+    @include bg-color('fourth');
+    @include color('third');
+    border: 0;
+}

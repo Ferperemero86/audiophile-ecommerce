@@ -2,50 +2,23 @@ import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 
+import { appData } from "../appData";
+
+import Header from "../components/layout/header/Header";
+
+import { findItemInArray } from "../helpers";
+
+console.log("APPDATA", appData);
+
 const PRODUCTS_QUERY = gql`
 	query getProducts {
 		getProducts {
 			id
-			slug
+			name
 			image {
 				mobile
 				tablet
 				desktop
-			}
-			name
-			category
-			new
-			price
-			description
-			includes {
-				quantity
-				item
-			}
-			gallery {
-				first {
-					mobile
-					desktop
-					tablet
-				}
-				second {
-					mobile
-					desktop
-					tablet
-				}
-				third {
-					mobile
-					desktop
-					tablet
-				}
-			}
-			others {
-				slug
-				name
-				image {
-					mobile
-					tablet
-					desktop
-				}
 			}
 		}
 	}
@@ -54,9 +27,24 @@ const PRODUCTS_QUERY = gql`
 export default function Home() {
 	const { data, loading } = useQuery(PRODUCTS_QUERY);
 
+	const headerProduct = appData.headers.headerPrimary;
+	const headerButton = appData.buttons.seeProduct;
+
 	if (!loading) {
 		console.log("DATA", data);
+		// const products = data.getProducts;
+		// const headerProductContent = findItemInArray(products, 4);
+
+		return (
+			<div className="home">
+				<Header
+					product={headerProduct}
+					button={headerButton}
+					type="header-primary"
+				/>
+			</div>
+		);
 	}
 
-	return <h1>Home</h1>;
+	return null;
 }

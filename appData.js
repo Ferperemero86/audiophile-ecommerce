@@ -33,5 +33,40 @@ export const appData = {
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925655/audiophile/home/desktop/queko3xmn24mhr6fg0yh.jpg"
 			}
 		}
-	}
+	},
+	categories: [
+		{
+			name: "HEADPHONES",
+			image:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/wdts8l0mu9zhgl6aipyh.png",
+			link: {
+				url: "/",
+				label: "SHOP",
+				image:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
+			}
+		},
+		{
+			name: "SPEAKERS",
+			image:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/d9gvqne2mwbonvfuthbi.png",
+			link: {
+				url: "/",
+				label: "SHOP",
+				image:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
+			}
+		},
+		{
+			name: "EARPHONES",
+			image:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/rjkyxcendlsvb4tkiees.png",
+			link: {
+				url: "/",
+				label: "SHOP",
+				image:
+					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
+			}
+		}
+	]
 };

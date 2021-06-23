@@ -1,0 +1,53 @@
+.categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.category {
+  position: relative;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  &-img {
+
+    max-width: 100%;
+
+    @include breakpoint-up('md') {
+      max-width: 70%;
+    }
+
+    @include breakpoint-up('lg') {
+      max-width: 50%;
+    }
+  }
+
+  &-body {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    &-heading {
+      
+      @include breakpoint-down('md') {
+        @include font-size('xxsm', $heading-sizes);
+      }
+    }
+
+    &-link {
+
+      margin-right: 0.5rem;
+      @include color('primary');
+      opacity: 0.5;
+
+
+      @include breakpoint-down('md') {
+        @include font-size('xsm', $par-sizes);
+      }
+    }
+  }
+}
+
+

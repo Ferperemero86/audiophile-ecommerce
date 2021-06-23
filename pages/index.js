@@ -5,6 +5,7 @@ import gql from "graphql-tag";
 import { appData } from "../appData";
 
 import Header from "../components/layout/header/Header";
+import SectionOne from "../components/layout/sections/section-one/SectionOne";
 
 import { findItemInArray } from "../helpers";
 
@@ -42,6 +43,9 @@ export default function Home() {
 					button={headerButton}
 					type="header-primary"
 				/>
+				<main>
+					<SectionOne />
+				</main>
 			</div>
 		);
 	}

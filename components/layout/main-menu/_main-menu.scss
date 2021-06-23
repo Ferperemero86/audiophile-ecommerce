@@ -1,9 +1,11 @@
 .main-menu {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr 4fr;
   align-items: center;
   @include padding-y(2rem);
   @include bg-color('primary');
+  z-index: 999;
 
   &-hamburger {
 

@@ -3,4 +3,11 @@
     @include bg-color('fourth');
     @include color('third');
     border: 0;
+
+    &:hover {
+
+        opacity: 0.6;
+        cursor: pointer;
+        @include transition('opacity', 0.5s);
+    }
 }

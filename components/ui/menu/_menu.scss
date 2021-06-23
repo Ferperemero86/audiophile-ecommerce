@@ -1,12 +1,17 @@
 .menu {
     
-    &-link {
+  &-link {
 
-        text-decoration: none;
+    text-decoration: none;
 
-        &:not(:last-child) {
+      &:hover {
 
-            margin-right: 1.8rem;
-        }
-    }
+        @include color('fourth');
+      }
+
+      &:not(:last-child) {
+
+        margin-right: 1.8rem;
+      }
+  }
 }

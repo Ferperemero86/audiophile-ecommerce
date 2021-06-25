@@ -7,6 +7,7 @@ import withData from "../utils/apollo-client";
 import "../scss/styles.scss";
 
 import MainMenu from "../components/layout/main-menu/MainMenu";
+import Footer from "../components/layout/footer/Footer";
 
 class MyApp extends App {
 	render() {
@@ -17,6 +18,7 @@ class MyApp extends App {
 				<div className="wrapper">
 					<MainMenu />
 					<Component />
+					<Footer />
 				</div>
 			</ApolloProvider>
 		);

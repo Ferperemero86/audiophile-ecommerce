@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  position: relative;
+  @include padding-y(2rem);
+  @include bg-color('primary');
+}
+
+.footer-first {
+  text-align: center;
+  
+  &-logo {
+    
+    margin-bottom: 2rem;
+  }
+
+  &-menu {
+    
+    margin-bottom: 2rem;
+  }
+
+  &-text {
+    
+    @include color('third');
+  }
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+}
+
+.footer-first-menu .menu {
+
+  &-link {
+    
+    @include color('third');
+    display: block;
+    font-weight: bold;
+    
+    &:not(:last-child) {
+
+      margin-right: 0;
+    }
+
+    &:not(:first-child) {
+      
+      margin-top: 1rem;
+    }
+
+
+    @include breakpoint-up('md') {
+      display: inline-block;
+
+      &:not(:last-child) {
+
+        margin-right: 1.8rem;
+      }
+
+    }
+   
+  }
+
+}
+
+.footer-second {
+  text-align: center;
+  margin-top: 4rem;
+  
+  &-copyright {
+      
+    @include color('third');
+    margin-bottom: 2rem;
+  }
+
+
+  @include breakpoint-up('md') {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}

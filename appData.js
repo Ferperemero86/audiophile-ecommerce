@@ -13,10 +13,10 @@ export const appData = {
 	menus: {
 		mainMenu: {
 			links: [
-				{ label: "Home", url: "/" },
-				{ label: "Headphones", url: "/headphones" },
-				{ label: "Speakers", url: "/speakers" },
-				{ label: "Earphones", url: "/earphones" }
+				{ label: "Home", url: "/", type: "string" },
+				{ label: "Headphones", url: "/headphones", type: "string" },
+				{ label: "Speakers", url: "/speakers", type: "string" },
+				{ label: "Earphones", url: "/earphones", type: "string" }
 			]
 		}
 	},
@@ -33,6 +33,41 @@ export const appData = {
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925655/audiophile/home/desktop/queko3xmn24mhr6fg0yh.jpg"
 			}
 		}
+	},
+	footer: {
+		logo: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/vn98a4svdecvkzq4urm9.svg",
+		menu: {
+			links: [
+				{ label: "Home", url: "/", type: "string" },
+				{ label: "Headphones", url: "/headphones", type: "string" },
+				{ label: "Speakers", url: "/speakers", type: "string" },
+				{ label: "Earphones", url: "/earphones", type: "string" }
+			]
+		},
+		text: "Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.",
+		menuSocial: {
+			links: [
+				{
+					url: "/",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/kptvyrafzekr0iewbwjf.svg",
+					type: "image"
+				},
+				{
+					url: "/",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925683/audiophile/shared/desktop/kgtvsdqbvpd3xpoltmxw.svg",
+					type: "image"
+				},
+				{
+					url: "/",
+					label:
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/desktop/m061j8nhc7aaghn8hift.svg",
+					type: "image"
+				}
+			]
+		},
+		copyRight: "Copyright 2021. All Rights Reserved"
 	},
 	categories: [
 		{

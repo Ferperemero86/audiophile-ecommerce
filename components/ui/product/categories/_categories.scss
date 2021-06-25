@@ -1,15 +1,30 @@
 .categories {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 0.5rem;
-  justify-content: center;
+
+
+  @include breakpoint-up('md') {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.5rem;
+    justify-content: center;
+  }
 }
 
 .category {
   position: relative;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
+
+  &:not(:first-child) {
+
+    margin-top: 5rem;
+
+
+    @include breakpoint-up('md') {
+      margin-top: 0;
+    }
+    
+  }
 
   &::before {
 
@@ -27,7 +42,7 @@
 
   &-img {
 
-    max-width: 100%;
+    max-width: 50%;
 
     @include breakpoint-up('md') {
       max-width: 70%;
@@ -61,6 +76,7 @@
       @include breakpoint-down('md') {
         @include font-size('xsm', $par-sizes);
       }
+
     }
   }
 }

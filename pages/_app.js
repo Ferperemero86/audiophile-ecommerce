@@ -14,8 +14,10 @@ class MyApp extends App {
 
 		return (
 			<ApolloProvider client={apollo}>
-				<MainMenu />
-				<Component />
+				<div className="wrapper">
+					<MainMenu />
+					<Component />
+				</div>
 			</ApolloProvider>
 		);
 	}

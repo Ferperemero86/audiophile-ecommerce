@@ -8,7 +8,6 @@ import { appData } from "../../../../appData";
 const { categories } = appData;
 
 const Category = ({ category }) => {
-	console.log(category);
 	return (
 		<div className="category">
 			<div className="category-header">
@@ -32,7 +31,6 @@ const CategoriesList = () => {
 };
 
 const Categories = () => {
-	console.log(categories);
 	return (
 		<div className="categories">
 			<CategoriesList />

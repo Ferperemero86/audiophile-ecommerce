@@ -1,6 +1,4 @@
 import React from "react";
-import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
 
 import { appData } from "../appData";
 
@@ -9,54 +7,26 @@ import SectionOne from "../components/layout/sections/section-one/SectionOne";
 import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
-// import { findItemInArray } from "../helpers";
-
-console.log("APPDATA", appData);
-
-const PRODUCTS_QUERY = gql`
-	query getProducts {
-		getProducts {
-			id
-			name
-			image {
-				mobile
-				tablet
-				desktop
-			}
-		}
-	}
-`;
-
 export default function Home() {
-	const { data, loading } = useQuery(PRODUCTS_QUERY);
-
 	const headerProduct = appData.headers.headerPrimary;
 	const headerButton = appData.buttons.seeProduct;
 	const casualContent = appData.casual;
 
-	if (!loading) {
-		console.log("DATA", data);
-		// const products = data.getProducts;
-		// const headerProductContent = findItemInArray(products, 4);
-
-		return (
-			<div className="home">
-				<Header
-					product={headerProduct}
-					button={headerButton}
-					type="header-primary"
+	return (
+		<div className="home">
+			<Header
+				product={headerProduct}
+				button={headerButton}
+				type="header-primary"
+			/>
+			<main>
+				<SectionOne stylesClass="container" />
+				<SectionTwo stylesClass="container vertical-margin" />
+				<SectionThree
+					stylesClass="container vertical-margin"
+					content={casualContent}
 				/>
-				<main>
-					<SectionOne stylesClass="container" />
-					<SectionTwo stylesClass="container vertical-margin" />
-					<SectionThree
-						stylesClass="container vertical-margin"
-						content={casualContent}
-					/>
-				</main>
-			</div>
-		);
-	}
-
-	return null;
+			</main>
+		</div>
+	);
 }

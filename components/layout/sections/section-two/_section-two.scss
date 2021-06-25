@@ -1,0 +1,7 @@
+.section-two .model {
+  
+  &:not(:first-child) {
+    
+    margin-top: 3rem;
+  }
+}

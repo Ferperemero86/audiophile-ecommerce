@@ -79,10 +79,38 @@ export const appData = {
 		},
 		second: {
 			name: "ZX7 SPEAKER",
+			image: [
+				{
+					size: "sm",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/home/mobile/kl4hc73lknoa9jhgolzs.jpg"
+				},
+				{
+					size: "md",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925653/audiophile/home/tablet/xwt8uvggkuilu9kfgv0s.jpg"
+				},
+				{
+					size: "lg",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925654/audiophile/home/desktop/xg7wcww7pnoruboowqdc.jpg"
+				}
+			],
 			button: { label: "SEE PRODUCT" }
 		},
 		third: {
 			name: "YX1 EARPHONES",
+			image: [
+				{
+					size: "sm",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925655/audiophile/home/mobile/i2aex3lxroeprqp7nbjn.jpg"
+				},
+				{
+					size: "md",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925652/audiophile/home/tablet/lcldcqoqka1rtzln8pvt.jpg"
+				},
+				{
+					size: "lg",
+					url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925654/audiophile/home/desktop/gmhsbze7zobixd9jmnrt.jpg"
+				}
+			],
 			button: { label: "SEE PRODUCT" }
 		}
 	}

@@ -3,13 +3,17 @@
   position: relative;
   top: -5rem;
   overflow: hidden;
-  //z-index: -999;
 }
 
 .header-primary .header-content {
   width: 100%;
   position: absolute;
   @include vertical-alignment;
+
+
+  @include breakpoint-up('lg') {
+    width: 50%;
+  }
 }
 
 .header-primary .header-background {

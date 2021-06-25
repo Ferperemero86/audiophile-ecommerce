@@ -68,5 +68,22 @@ export const appData = {
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
 			}
 		}
-	]
+	],
+	models: {
+		first: {
+			name: "ZX9 SPEAKER",
+			image:
+				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/d9gvqne2mwbonvfuthbi.png",
+			text: "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.",
+			button: { label: "SEE PRODUCT" }
+		},
+		second: {
+			name: "ZX7 SPEAKER",
+			button: { label: "SEE PRODUCT" }
+		},
+		third: {
+			name: "YX1 EARPHONES",
+			button: { label: "SEE PRODUCT" }
+		}
+	}
 };

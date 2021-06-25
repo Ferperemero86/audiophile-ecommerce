@@ -6,8 +6,9 @@ import { appData } from "../appData";
 
 import Header from "../components/layout/header/Header";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
+import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
 
-import { findItemInArray } from "../helpers";
+// import { findItemInArray } from "../helpers";
 
 console.log("APPDATA", appData);
 
@@ -44,7 +45,8 @@ export default function Home() {
 					type="header-primary"
 				/>
 				<main>
-					<SectionOne />
+					<SectionOne stylesClass="container" />
+					<SectionTwo stylesClass="container vertical-margin" />
 				</main>
 			</div>
 		);

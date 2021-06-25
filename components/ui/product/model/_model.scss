@@ -1,0 +1,74 @@
+.model-first {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  @include bg-color('fourth');
+  @include color('second');
+  @include b-radius(0.5rem);
+
+    &::before {
+
+      content: '';
+      position: absolute;
+      width: 25rem;
+      height: 25rem;
+      border: 1px solid #fff;
+      opacity: 0.3;
+      @include xy-alignment;
+      @include b-radius(50%);
+
+
+      @include breakpoint-up('lg') {
+        left: 25%;
+      }
+    }
+
+    &::after {
+      
+      @extend ::before;
+      width: 20rem;
+      height: 20rem;
+    }
+
+
+    @include breakpoint-up('lg') {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+}
+
+.model-first .model-header {
+  position: relative;
+  z-index: 3;
+ 
+  &-img {
+
+    max-width: 12.31rem;
+
+
+    @include breakpoint-up('lg') {
+      max-width: 25.62rem;
+    }
+  }
+}
+
+.model-first .model-body {
+  position: relative;
+  z-index: 3;
+ 
+  &-heading {
+    
+    margin-bottom: 2rem;
+  }
+  
+  &-text {
+    
+    margin-bottom: 2rem;
+  }
+
+  &-btn {
+    
+    @include bg-color('primary');
+  }
+}

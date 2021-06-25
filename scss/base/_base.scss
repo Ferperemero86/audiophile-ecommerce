@@ -47,6 +47,20 @@ a {
     
 }
 
+.vertical-margin {
+  @include vertical-margin('sm');
+
+
+  @include breakpoint-up('md') {
+    @include vertical-margin('md');
+  }
+
+  @include breakpoint-up('lg') {
+    @include vertical-margin('lg');
+  }
+
+}
+
 
 // Border // 
 

@@ -2,8 +2,8 @@
 
 $colors: (
   'primary': hsl(0, 0%, 0%), // Pure Black
-  'second': hsl(255, 255%, 255%), // Pure White
-  'third': hsl(241, 241%, 241%), // Grey
+  'second': hsl(0,0%,100%), // Pure White
+  'third': hsl(0,0%,94.5%), // Grey
   'fourth': hsl(22, 65%, 57%) //Orange
 );
 
@@ -70,9 +70,9 @@ $breakpoints-down: (
 //// SPACES ////
 
 $margin-y: (
-  'sm': 7.5rem,
-  'md': 9rem,
-  'lg': 12.5rem,
+  'sm': 6rem,
+  'md': 8rem,
+  'lg': 10rem,
 );
 
 $padding-x: (

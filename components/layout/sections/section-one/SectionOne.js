@@ -2,9 +2,9 @@ import React from "react";
 
 import Categories from "../../../ui/product/categories/Categories";
 
-const SectionOne = () => {
+const SectionOne = ({ stylesClass }) => {
 	return (
-		<div className="section-one">
+		<div className={`section-one ${stylesClass}`}>
 			<Categories />
 		</div>
 	);

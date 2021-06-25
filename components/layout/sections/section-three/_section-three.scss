@@ -1,0 +1,58 @@
+.section-three-casual {
+  text-align: center;
+
+
+  @include breakpoint-up('lg') {
+    display: flex;  
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+}
+
+.section-three-casual-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+
+  @include breakpoint-up('lg') {
+    width: 50%;
+  }
+
+}
+
+.section-three .casual-header {
+
+  &-img {
+    
+    width: 100%;
+    @include b-radius(0.5rem);
+  }
+  
+}
+
+.section-three-casual-body {
+  
+  
+  @include breakpoint-up('lg') {
+    width: 50%;
+    @include hor-padding(2rem);
+    text-align: left;
+  }
+
+}
+
+.section-three .casual-body {
+
+  &-heading {
+    
+    margin-bottom: 3rem;
+  }
+
+  &-text {
+    
+    opacity: 0.5;
+  }
+
+
+}

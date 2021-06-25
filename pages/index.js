@@ -7,6 +7,7 @@ import { appData } from "../appData";
 import Header from "../components/layout/header/Header";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
 import SectionTwo from "../components/layout/sections/section-two/SectionTwo";
+import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
 // import { findItemInArray } from "../helpers";
 
@@ -31,6 +32,7 @@ export default function Home() {
 
 	const headerProduct = appData.headers.headerPrimary;
 	const headerButton = appData.buttons.seeProduct;
+	const casualContent = appData.casual;
 
 	if (!loading) {
 		console.log("DATA", data);
@@ -47,6 +49,10 @@ export default function Home() {
 				<main>
 					<SectionOne stylesClass="container" />
 					<SectionTwo stylesClass="container vertical-margin" />
+					<SectionThree
+						stylesClass="container vertical-margin"
+						content={casualContent}
+					/>
 				</main>
 			</div>
 		);

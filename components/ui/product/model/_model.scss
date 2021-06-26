@@ -198,3 +198,42 @@
   }
   
 }
+
+.model-fourth {
+  
+
+  @include breakpoint-up('lg') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.model-fourth .model-header {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  &-img {
+
+    width: 100%;
+
+    @include breakpoint-up('md') {
+      width: 100%;
+    }
+  }
+
+}
+
+.model-fourth .model-body-content {
+  text-align: center;
+
+  &-btn {
+
+    margin-top: 2rem;
+  }
+
+}
+

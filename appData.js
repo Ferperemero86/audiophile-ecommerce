@@ -71,33 +71,36 @@ export const appData = {
 	},
 	categories: [
 		{
+			category: "headphones",
 			name: "HEADPHONES",
 			image:
 				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/wdts8l0mu9zhgl6aipyh.png",
 			link: {
-				url: "/",
+				url: "/models",
 				label: "SHOP",
 				image:
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
 			}
 		},
 		{
+			category: "speakers",
 			name: "SPEAKERS",
 			image:
 				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/d9gvqne2mwbonvfuthbi.png",
 			link: {
-				url: "/",
+				url: "/models",
 				label: "SHOP",
 				image:
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"
 			}
 		},
 		{
+			category: "earphones",
 			name: "EARPHONES",
 			image:
 				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/rjkyxcendlsvb4tkiees.png",
 			link: {
-				url: "/",
+				url: "/models",
 				label: "SHOP",
 				image:
 					"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925681/audiophile/shared/desktop/avedl0lltexyon6cd890.svg"

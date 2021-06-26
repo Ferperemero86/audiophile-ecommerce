@@ -41,3 +41,20 @@
   }
 
 }
+
+.header-second {
+  padding: 2rem 0;
+  text-align: center;
+  @include bg-color('primary');
+
+  &-title {
+
+    @include color('third');
+  }
+
+
+  @include breakpoint-up('md') {
+    padding: 6rem 0;
+  }
+
+}

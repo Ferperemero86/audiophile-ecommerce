@@ -10,7 +10,7 @@ const { logo, menu, text, copyRight, menuSocial } = footer;
 
 const Footer = () => {
 	return (
-		<div className="footer container">
+		<div className="footer container vertical-margin">
 			<div className="footer-first">
 				<Img url={logo} stylesClass="footer-first-logo" />
 				<Menu links={menu.links} stylesClass="footer-first-menu" />

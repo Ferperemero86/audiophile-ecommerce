@@ -2,9 +2,8 @@ import { gql } from "apollo-server-micro";
 
 const typeDefs = gql`
 	type Image {
-		mobile: String
-		tablet: String
-		desktop: String
+		size: String
+		url: String
 	}
 
 	type Accesory {
@@ -27,7 +26,7 @@ const typeDefs = gql`
 	type Product {
 		id: Int
 		slug: String
-		image: Image
+		image: [Image]
 		name: String
 		category: String
 		new: Boolean
@@ -41,7 +40,7 @@ const typeDefs = gql`
 
 	type Query {
 		getProduct(id: Int): Product
-		getProducts: [Product]
+		getProducts(category: String): [Product]
 	}
 `;
 

@@ -19,7 +19,10 @@ const Images = ({ images }) => {
 };
 
 const Model = ({ model, stylesClass }) => {
-	const { image, name, text, button } = model;
+	const { image, name, text, description } = model;
+
+	const modelText = !text ? description : text;
+
 	return (
 		<div className={`model ${stylesClass}`}>
 			<div className="model-header">
@@ -31,8 +34,8 @@ const Model = ({ model, stylesClass }) => {
 			<div className="model-body">
 				<div className="model-body-content">
 					<h2 className="model-body-content-heading">{name}</h2>
-					<p className="model-body-content-text">{text}</p>
-					<Button label={button.label} stylesClass="model-body-content-btn" />
+					<p className="model-body-content-text">{modelText}</p>
+					<Button label="SEE PRODUCT" stylesClass="model-body-content-btn" />
 				</div>
 			</div>
 		</div>

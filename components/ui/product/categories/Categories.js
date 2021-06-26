@@ -15,7 +15,12 @@ const Category = ({ category }) => {
 			</div>
 			<div className="category-body">
 				<h3 className="category-body-heading">{category.name}</h3>
-				<Link href={category.link.url}>
+				<Link
+					href={{
+						pathname: `${category.link.url}`,
+						query: { category: category.category }
+					}}
+				>
 					<a className="category-body-link">{category.link.label}</a>
 				</Link>
 				<Img url={category.link.image} stylesClass="category-body-arrow" />

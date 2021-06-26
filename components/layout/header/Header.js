@@ -19,13 +19,16 @@ const HeaderPrimary = ({ product, button }) => {
 	return <ProductIntro product={product} button={button} />;
 };
 
-const Header = ({ product, button, type }) => {
+const Header = ({ product, button, type, title }) => {
 	return (
 		<div className={`header ${type}`}>
-			<Background images={product.images} />
+			{type === "header-primary" && <Background images={product.images} />}
 			<div className="header-content container">
 				{type === "header-primary" && (
 					<HeaderPrimary product={product} button={button} />
+				)}
+				{type === "header-second" && (
+					<h1 className="header-second-title">{title}</h1>
 				)}
 			</div>
 		</div>

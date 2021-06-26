@@ -3,14 +3,20 @@ export const data = [
 		id: 1,
 		slug: "yx1-earphones",
 		name: "YX1 Wireless Earphones",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925671/audiophile/product-yx1-earphones/mobile/un9lf2ru6f5t8r3zx5pd.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/tablet/qajnu9rb3tms3o2ba0tv.jpg",
-			desktop:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/desktop/tmskflvlhkgrcbyz95ms.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925671/audiophile/product-yx1-earphones/mobile/un9lf2ru6f5t8r3zx5pd.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925669/audiophile/product-yx1-earphones/tablet/qajnu9rb3tms3o2ba0tv.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925670/audiophile/product-yx1-earphones/desktop/tmskflvlhkgrcbyz95ms.jpg"
+			}
+		],
 		category: "earphones",
 		new: true,
 		price: 599,
@@ -109,14 +115,20 @@ export const data = [
 		id: 2,
 		slug: "xx59-headphones",
 		name: "XX59 Headphones",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925660/audiophile/product-xx59-headphones/mobile/bauvqowreedkegjcgdyz.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925658/audiophile/product-xx59-headphones/tablet/ytdbsdyarmwafgiavkum.jpg",
-			desktop:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925659/audiophile/product-xx59-headphones/desktop/yiepq2206xjhxuyff5ki.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925650/audiophile/category-headphones/mobile/dwfnv670nsufl460gn9r.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925648/audiophile/category-headphones/tablet/pw4f6vwia4cmuggnximd.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925650/audiophile/category-headphones/desktop/nqsn2ogpss5fmcdvplwv.jpg"
+			}
+		],
 		category: "headphones",
 		new: false,
 		price: 899,
@@ -211,14 +223,20 @@ export const data = [
 		id: 3,
 		slug: "xx99-mark-one-headphones",
 		name: "XX99 Mark I Headphones",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925664/audiophile/product-xx99-mark-one-headphones/mobile/sq4foahiodqxa9vu5rpo.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925661/audiophile/product-xx99-mark-one-headphones/tablet/o6sr5czz4o6xiyq1pybq.jpg",
-			desktop:
-				"./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925650/audiophile/category-headphones/mobile/jjdwlign5u5hyg59bx55.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925649/audiophile/category-headphones/tablet/zh0wep9qtwnwzvs8ggro.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925649/audiophile/category-headphones/desktop/mm8sehdiqtmxshqtkyom.jpg"
+			}
+		],
 		category: "headphones",
 		new: false,
 		price: 1750,
@@ -280,7 +298,7 @@ export const data = [
 					tablet:
 						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925680/audiophile/shared/tablet/milzsye3h2neazny0oy0.jpg",
 					desktop:
-						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/pvong0ylzyvmfqcdgegf.jpg"
+						"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925649/audiophile/category-headphones/desktop/hefhinjyoiimhnj94g9y.jpg"
 				}
 			},
 			{
@@ -313,14 +331,20 @@ export const data = [
 		id: 4,
 		slug: "xx99-mark-two-headphones",
 		name: "XX99 Mark II Headphones",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925668/audiophile/product-xx99-mark-two-headphones/mobile/g0yfu8pg8nexejl39rw7.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925665/audiophile/product-xx99-mark-two-headphones/tablet/nbby0zny8ctcaoog5kp2.jpg",
-			desktop:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925666/audiophile/product-xx99-mark-two-headphones/desktop/iyzeakt7uykoezxxvtjm.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925650/audiophile/category-headphones/mobile/zqe08wdimk3vs6ol7qmu.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925649/audiophile/category-headphones/tablet/wckb74qtavclqjwsddaq.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925666/audiophile/product-xx99-mark-two-headphones/desktop/iyzeakt7uykoezxxvtjm.jpg"
+			}
+		],
 		category: "headphones",
 		new: true,
 		price: 2999,
@@ -419,14 +443,20 @@ export const data = [
 		id: 5,
 		slug: "zx7-speaker",
 		name: "ZX7 Speaker",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/mobile/uarwmcbo3vjmha3xfwak.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/kpz1swvjkrxcnjsryen7.jpg",
-			desktop:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/desktop/p8lna9t99wixvzngdfix.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/mobile/uarwmcbo3vjmha3xfwak.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925672/audiophile/product-zx7-speaker/tablet/kpz1swvjkrxcnjsryen7.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925674/audiophile/product-zx7-speaker/desktop/p8lna9t99wixvzngdfix.jpg"
+			}
+		],
 		category: "speakers",
 		new: false,
 		price: 3500,
@@ -525,14 +555,20 @@ export const data = [
 		id: 6,
 		slug: "zx9-speaker",
 		name: "ZX9 Speaker",
-		image: {
-			mobile:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/mobile/l1fibtlgud1ns7la7sko.jpg",
-			tablet:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925676/audiophile/product-zx9-speaker/tablet/h9i0euov3hbshfyiog06.jpg",
-			desktop:
-				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925677/audiophile/product-zx9-speaker/desktop/fzzgovt7kghdwwrbd7e1.jpg"
-		},
+		image: [
+			{
+				size: "sm",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925679/audiophile/product-zx9-speaker/mobile/l1fibtlgud1ns7la7sko.jpg"
+			},
+			{
+				size: "md",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925676/audiophile/product-zx9-speaker/tablet/h9i0euov3hbshfyiog06.jpg"
+			},
+			{
+				size: "lg",
+				url: "https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925677/audiophile/product-zx9-speaker/desktop/fzzgovt7kghdwwrbd7e1.jpg"
+			}
+		],
 		category: "speakers",
 		new: true,
 		price: 4500,

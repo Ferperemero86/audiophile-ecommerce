@@ -7,7 +7,13 @@ const resolvers = {
 		getProduct: (_, { id }) => {
 			return lodash.find(data, { id });
 		},
-		getProducts: (_, args) => data
+		getProducts: (_, { category }) => {
+			if (!category) {
+				return data;
+			}
+
+			return data.filter((item) => item.category === category);
+		}
 	}
 };
 

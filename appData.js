@@ -14,9 +14,24 @@ export const appData = {
 		mainMenu: {
 			links: [
 				{ label: "Home", url: "/", type: "string" },
-				{ label: "Headphones", url: "/headphones", type: "string" },
-				{ label: "Speakers", url: "/speakers", type: "string" },
-				{ label: "Earphones", url: "/earphones", type: "string" }
+				{
+					label: "Headphones",
+					url: "/models",
+					type: "string",
+					category: "headphones"
+				},
+				{
+					label: "Speakers",
+					url: "/models",
+					type: "string",
+					category: "speakers"
+				},
+				{
+					label: "Earphones",
+					url: "/models",
+					type: "string",
+					category: "earphones"
+				}
 			]
 		}
 	},
@@ -39,9 +54,24 @@ export const appData = {
 		menu: {
 			links: [
 				{ label: "Home", url: "/", type: "string" },
-				{ label: "Headphones", url: "/headphones", type: "string" },
-				{ label: "Speakers", url: "/speakers", type: "string" },
-				{ label: "Earphones", url: "/earphones", type: "string" }
+				{
+					label: "Headphones",
+					url: "/models",
+					type: "string",
+					category: "headphones"
+				},
+				{
+					label: "Speakers",
+					url: "/models",
+					type: "string",
+					category: "speakers"
+				},
+				{
+					label: "Earphones",
+					url: "/models",
+					type: "string",
+					category: "earphones"
+				}
 			]
 		},
 		text: "Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.",

@@ -16,7 +16,10 @@ const Links = ({ links }) => {
 		}
 
 		return (
-			<Link href={link.url} key={idx}>
+			<Link
+				href={{ pathname: link.url, query: { category: link.category } }}
+				key={idx}
+			>
 				<a className="menu-link">{link.label}</a>
 			</Link>
 		);

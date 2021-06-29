@@ -139,6 +139,8 @@ export const appData = {
 	],
 	models: {
 		first: {
+			id: 6,
+			category: "speakers",
 			name: "ZX9 SPEAKER",
 			image:
 				"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925684/audiophile/shared/desktop/d9gvqne2mwbonvfuthbi.png",
@@ -146,6 +148,8 @@ export const appData = {
 			button: { label: "SEE PRODUCT" }
 		},
 		second: {
+			id: 5,
+			category: "speakers",
 			name: "ZX7 SPEAKER",
 			image: [
 				{
@@ -164,6 +168,8 @@ export const appData = {
 			button: { label: "SEE PRODUCT" }
 		},
 		third: {
+			id: 1,
+			category: "earphones",
 			name: "YX1 EARPHONES",
 			image: [
 				{

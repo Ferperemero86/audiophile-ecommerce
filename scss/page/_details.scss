@@ -1,0 +1,6 @@
+.details-back-link {
+  @include color('primary');
+  display: inline-block;
+  opacity: 0.7;
+  @include padding-y(2rem);
+}

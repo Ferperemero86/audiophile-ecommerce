@@ -15,11 +15,19 @@ const Links = ({ links }) => {
 			);
 		}
 
+		if (link.category) {
+			return (
+				<Link
+					href={{ pathname: link.url, query: { category: link.category } }}
+					key={idx}
+				>
+					<a className="menu-link">{link.label}</a>
+				</Link>
+			);
+		}
+
 		return (
-			<Link
-				href={{ pathname: link.url, query: { category: link.category } }}
-				key={idx}
-			>
+			<Link href={link.url} key={idx}>
 				<a className="menu-link">{link.label}</a>
 			</Link>
 		);

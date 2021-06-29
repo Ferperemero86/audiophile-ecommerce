@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import Img from "../../img/Img";
 import Button from "../../button/Button";
@@ -19,9 +20,19 @@ const Images = ({ images }) => {
 };
 
 const Model = ({ model, stylesClass }) => {
-	const { image, name, text, description } = model;
-
+	const router = useRouter();
+	const { id, image, name, text, description, category } = model;
+	console.log("ID", model);
 	const modelText = !text ? description : text;
+
+	const goToDetails = (e) => {
+		e.preventDefault();
+
+		router.push({
+			pathname: "/details",
+			query: { id, category }
+		});
+	};
 
 	return (
 		<div className={`model ${stylesClass}`}>
@@ -35,7 +46,11 @@ const Model = ({ model, stylesClass }) => {
 				<div className="model-body-content">
 					<h2 className="model-body-content-heading">{name}</h2>
 					<p className="model-body-content-text">{modelText}</p>
-					<Button label="SEE PRODUCT" stylesClass="model-body-content-btn" />
+					<Button
+						label="SEE PRODUCT"
+						stylesClass="model-body-content-btn"
+						onClick={goToDetails}
+					/>
 				</div>
 			</div>
 		</div>

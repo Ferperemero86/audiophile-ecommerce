@@ -9,6 +9,7 @@
 @import '../scss/base/base';
 
 @import '../scss/page/home';
+@import '../scss/page/details';
 
 
 @import '../components/layout/main-menu/main-menu';
@@ -18,6 +19,7 @@
 @import '../components/layout/sections/section-two/section-two';
 @import '../components/layout/sections/section-three/section-three';
 @import '../components/layout/sections/section-four/section-four';
+@import '../components/layout/sections/section-five/section-five';
 
 
 @import '../components/ui/menu/menu';
@@ -27,3 +29,7 @@
 @import '../components/ui/product/intro/product-intro';
 @import '../components/ui/product/categories/categories';
 @import '../components/ui/product/model/model';
+@import '../components/ui/product/description/description';
+@import '../components/ui/product/features/features';
+@import '../components/ui/product/gallery/gallery';
+@import '../components/ui/product/others/others';

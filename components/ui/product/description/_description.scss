@@ -1,0 +1,59 @@
+.description {
+  
+
+  @include breakpoint-up('md') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  @include breakpoint-up('lg') {
+    column-gap: 8rem;
+  }
+
+}
+
+.description-img {
+  width: 100%;
+}
+
+.description-body {
+  text-align: left;
+
+  &-heading {
+
+    margin: 2rem 0;
+  }
+
+  &-text {
+    
+    opacity: 0.7;
+  }
+
+  &-price {
+    
+    margin: 2rem 0;
+  }
+
+  &-btns {
+    
+    display: flex;
+  }
+
+}
+
+.product-amount-btn {
+  @include bg-color('third');
+  margin-right: 2rem;
+}
+
+.product-amount-btn .btn-el{
+  display: inline-block;
+  padding: 1rem;
+
+  &:hover {
+    
+    cursor: pointer;
+  }
+}

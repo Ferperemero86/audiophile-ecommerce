@@ -18,6 +18,7 @@ const QUERY = gql`
 				size
 				url
 			}
+			category
 			name
 			price
 			description
@@ -43,12 +44,14 @@ const Models = () => {
 		return (
 			<div className="models">
 				<Header type="header-second" title={headerTitle} />
-				<SectionFour modelsItems={modelsItems} />
-				<SectionOne stylesClass="container vertical-margin" />
-				<SectionThree
-					stylesClass="container vertical-margin"
-					content={casualContent}
-				/>
+				<main>
+					<SectionFour modelsItems={modelsItems} />
+					<SectionOne stylesClass="container vertical-margin" />
+					<SectionThree
+						stylesClass="container vertical-margin"
+						content={casualContent}
+					/>
+				</main>
 			</div>
 		);
 	}

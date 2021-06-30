@@ -1,0 +1,18 @@
+.includes {
+    padding-top: 4rem;
+
+    &-heading {
+      
+      padding-bottom: 2rem;
+    }
+}
+
+.includes-body-item {
+  display: flex;
+}
+
+.includes-body-item .amount {
+  margin-right: 1rem;
+  @include font-weight('sm', $font-weights);
+  @include color('fourth');
+}

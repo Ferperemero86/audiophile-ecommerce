@@ -18,7 +18,11 @@ const Background = ({ images, stylesClass }) => {
 		const size =
 			img === "mobile" ? "sm-img" : img === "tablet" ? "md-img" : "lg-img";
 
-		return <Img url={url} stylesClass={`${size} ${stylesClass}`} key={idx} />;
+		if (url.includes("http")) {
+			return <Img url={url} stylesClass={`${size} ${stylesClass}`} key={idx} />;
+		}
+
+		return null;
 	});
 };
 

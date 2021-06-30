@@ -6,15 +6,21 @@ const typeDefs = gql`
 		url: String
 	}
 
+	type GalleryImg {
+		mobile: String
+		tablet: String
+		desktop: String
+	}
+
 	type Accesory {
 		quantity: Int
 		item: String
 	}
 
 	type Gallery {
-		first: Image
-		second: Image
-		third: Image
+		first: GalleryImg
+		second: GalleryImg
+		third: GalleryImg
 	}
 
 	type RelatedProduct {

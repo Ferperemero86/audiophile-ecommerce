@@ -1,0 +1,51 @@
+.gallery {
+  width: 100%;
+  padding-top: 4rem;
+
+  @include breakpoint-up('md') {
+    display: grid;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    grid-template-areas: 
+      'first . second'
+      'third third third'
+    ;
+  }
+
+  &-img {
+    
+    width: 100%;
+    line-height: 0;
+
+    &:nth-child(1) {
+      
+      grid-area: first;
+    }
+
+    &:nth-child(2) {
+      
+      grid-area: second;
+    }
+
+    &:nth-child(3) {
+      
+      grid-area: third;
+    }
+
+    &:not(:first-child) {
+      
+      margin-top: 2rem;
+
+
+      @include breakpoint-up('md') {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+.gallery-img .img {
+  width: 100%;
+  @include b-radius(0.5rem);
+}

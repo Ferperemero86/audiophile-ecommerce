@@ -16,6 +16,7 @@
 
 .description-img {
   width: 100%;
+  @include b-radius(0.5rem);
 }
 
 .description-body {

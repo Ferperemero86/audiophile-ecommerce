@@ -20,6 +20,28 @@ const QUERY = gql`
 			name
 			price
 			description
+			features
+			includes {
+				quantity
+				item
+			}
+			gallery {
+				first {
+					mobile
+					tablet
+					desktop
+				}
+				second {
+					mobile
+					tablet
+					desktop
+				}
+				third {
+					mobile
+					tablet
+					desktop
+				}
+			}
 		}
 	}
 `;

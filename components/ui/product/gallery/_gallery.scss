@@ -7,8 +7,8 @@
     column-gap: 0.5rem;
     row-gap: 0.5rem;
     grid-template-areas: 
-      'first . second'
-      'third third third'
+      'first  third'
+      'second third'
     ;
   }
 
@@ -30,6 +30,12 @@
     &:nth-child(3) {
       
       grid-area: third;
+
+      .img {
+
+        height: 100%;
+      }
+  
     }
 
     &:not(:first-child) {

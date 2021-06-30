@@ -69,7 +69,10 @@ const Details = () => {
 					<a className="details-back-link container">Go Back</a>
 				</Link>
 				<main>
-					<SectionFive product={product} stylesClass="container" />
+					<SectionFive
+						product={product}
+						stylesClass="container vertical-margin"
+					/>
 				</main>
 			</div>
 		);

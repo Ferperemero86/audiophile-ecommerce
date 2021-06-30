@@ -6,7 +6,6 @@ import Includes from "../../../ui/product/includes/Includes";
 import Gallery from "../../../ui/product/Gallery/Gallery";
 
 const SectionFive = ({ product, stylesClass }) => {
-	console.log("PRODUCT", product);
 	const { image, name, description, price, features, includes, gallery } =
 		product;
 

@@ -4,10 +4,19 @@ import Description from "../../../ui/product/description/Description";
 import Features from "../../../ui/product/features/Features";
 import Includes from "../../../ui/product/includes/Includes";
 import Gallery from "../../../ui/product/Gallery/Gallery";
+import Others from "../../../ui/product/others/Others";
 
 const SectionFive = ({ product, stylesClass }) => {
-	const { image, name, description, price, features, includes, gallery } =
-		product;
+	const {
+		image,
+		name,
+		description,
+		price,
+		features,
+		includes,
+		gallery,
+		others
+	} = product;
 
 	return (
 		<div className={`section-five ${stylesClass}`}>
@@ -22,6 +31,7 @@ const SectionFive = ({ product, stylesClass }) => {
 				<Includes includes={includes} />
 			</div>
 			<Gallery images={gallery} />
+			<Others others={others} stylesClass="vertical-margin" />
 		</div>
 	);
 };

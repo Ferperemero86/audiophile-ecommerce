@@ -19,9 +19,9 @@ const GalleryImages = ({ images }) => {
 	});
 };
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, stylesClass }) => {
 	return (
-		<div className="gallery">
+		<div className={`gallery ${stylesClass}`}>
 			<GalleryImages images={images} />
 		</div>
 	);

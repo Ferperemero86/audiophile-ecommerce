@@ -26,7 +26,9 @@ const typeDefs = gql`
 	type RelatedProduct {
 		slug: String
 		name: String
-		image: Image
+		image: GalleryImg
+		category: String
+		id: Int
 	}
 
 	type Product {

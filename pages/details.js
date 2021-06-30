@@ -13,6 +13,7 @@ const QUERY = gql`
 	query getProductDetails($id: Int) {
 		getProduct(id: $id) {
 			id
+			category
 			image {
 				size
 				url
@@ -42,6 +43,16 @@ const QUERY = gql`
 					desktop
 				}
 			}
+			others {
+				name
+				image {
+					mobile
+					tablet
+					desktop
+				}
+				id
+				category
+			}
 		}
 	}
 `;
@@ -57,7 +68,6 @@ const Details = () => {
 	});
 
 	if (!loading) {
-		console.log("DATA", data);
 		const product = data.getProduct;
 		// const productDetails = data.getProduct;
 
@@ -69,10 +79,7 @@ const Details = () => {
 					<a className="details-back-link container">Go Back</a>
 				</Link>
 				<main>
-					<SectionFive
-						product={product}
-						stylesClass="container vertical-margin"
-					/>
+					<SectionFive product={product} stylesClass="container" />
 				</main>
 			</div>
 		);

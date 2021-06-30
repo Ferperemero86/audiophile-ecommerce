@@ -22,7 +22,6 @@ const Images = ({ images }) => {
 const Model = ({ model, stylesClass }) => {
 	const router = useRouter();
 	const { id, image, name, text, description, category } = model;
-	console.log("ID", model);
 	const modelText = !text ? description : text;
 
 	const goToDetails = (e) => {

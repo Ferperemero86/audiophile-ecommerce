@@ -1,0 +1,33 @@
+.others {
+  text-align: center;
+  
+  &-heading {
+    
+    margin: 2rem 0;
+    @include font-weight('md', $font-weights);
+  }
+
+}
+
+.others-item {
+  
+  &:not(:first-child) {
+        
+    margin-top: 2rem;
+  }
+  
+  &-img {
+  
+    margin: 2rem auto;
+  }
+
+}
+
+.others-item-body {  
+  
+  .heading {
+    
+    margin-bottom: 2rem;
+  }
+
+}

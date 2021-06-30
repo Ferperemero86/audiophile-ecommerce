@@ -6,8 +6,9 @@ import Link from "next/link";
 
 import SectionFive from "../components/layout/sections/section-five/SectionFive";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
+import SectionThree from "../components/layout/sections/section-three/SectionThree";
 
-// import { appData } from "../appData";
+import { appData } from "../appData";
 
 const QUERY = gql`
 	query getProductDetails($id: Int) {
@@ -60,7 +61,7 @@ const QUERY = gql`
 const Details = () => {
 	const router = useRouter();
 	const { query } = router;
-	// const casualContent = appData.casual;
+	const casualContent = appData.casual;
 	const { data, loading } = useQuery(QUERY, {
 		variables: {
 			id: parseInt(query.id)
@@ -81,6 +82,10 @@ const Details = () => {
 				<main>
 					<SectionFive product={product} stylesClass="container" />
 					<SectionOne stylesClass="vertical-margin container" />
+					<SectionThree
+						stylesClass="container vertical-margin"
+						content={casualContent}
+					/>
 				</main>
 			</div>
 		);

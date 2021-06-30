@@ -5,7 +5,7 @@ import { useQuery, gql } from "@apollo/client";
 import Link from "next/link";
 
 import SectionFive from "../components/layout/sections/section-five/SectionFive";
-// import SectionSix from "../components/layout/sections/section-six/SectionSix";
+import SectionOne from "../components/layout/sections/section-one/SectionOne";
 
 // import { appData } from "../appData";
 
@@ -80,6 +80,7 @@ const Details = () => {
 				</Link>
 				<main>
 					<SectionFive product={product} stylesClass="container" />
+					<SectionOne stylesClass="vertical-margin container" />
 				</main>
 			</div>
 		);

@@ -1,8 +1,11 @@
 import React from "react";
 import App from "next/app";
 
+import { createWrapper } from "next-redux-wrapper";
 import { ApolloProvider } from "@apollo/react-hooks";
 import withData from "../utils/apollo-client";
+import { Provider } from "react-redux";
+import { store } from "../state/store";
 
 import "../scss/styles.scss";
 
@@ -14,15 +17,20 @@ class MyApp extends App {
 		const { Component, apollo } = this.props;
 
 		return (
-			<ApolloProvider client={apollo}>
-				<div className="wrapper">
-					<MainMenu />
-					<Component />
-					<Footer />
-				</div>
-			</ApolloProvider>
+			<Provider store={store}>
+				<ApolloProvider client={apollo}>
+					<div className="wrapper">
+						<MainMenu />
+						<Component />
+						<Footer />
+					</div>
+				</ApolloProvider>
+			</Provider>
 		);
 	}
 }
 
-export default withData(MyApp);
+const makeStore = () => store;
+const wrapper = createWrapper(makeStore);
+
+export default wrapper.withRedux(withData(MyApp));

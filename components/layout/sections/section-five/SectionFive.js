@@ -8,6 +8,7 @@ import Others from "../../../ui/product/others/Others";
 
 const SectionFive = ({ product, stylesClass }) => {
 	const {
+		id,
 		image,
 		name,
 		description,
@@ -21,6 +22,7 @@ const SectionFive = ({ product, stylesClass }) => {
 	return (
 		<div className={`section-five ${stylesClass}`}>
 			<Description
+				id={id}
 				image={image}
 				heading={name}
 				text={description}

@@ -202,9 +202,9 @@
 .model-fourth {
   
 
-  @include breakpoint-up('lg') {
+  @include breakpoint-up('md') {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
     align-items: center;
     justify-content: center;

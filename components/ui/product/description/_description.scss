@@ -3,7 +3,7 @@
 
   @include breakpoint-up('md') {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     column-gap: 2rem;
   }
@@ -52,6 +52,8 @@
 .product-amount-btn .btn-el{
   display: inline-block;
   padding: 1rem;
+  background: none;
+  @include color('primary');
 
   &:hover {
     

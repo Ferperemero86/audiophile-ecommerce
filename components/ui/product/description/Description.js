@@ -15,12 +15,25 @@ const Description = ({ id, image, heading, text, price }) => {
 	const state = useSelector((state) => state.cart);
 	const itemInCart = state.items.find((item) => item.id === id);
 	const quantity = !itemInCart ? 0 : itemInCart.quantity;
-	console.log("AMOUNT", itemInCart);
-	console.log("DESCSTATE", state);
+	const smImage = image[0];
 
-	const addItem = () => dispatch(addItemToCart(id, heading, price));
-	const increaseAmount = () => dispatch(increaseItemAmount(id, heading, price));
-	const decreaseAmount = () => dispatch(decreaseItemAmount(id, heading, price));
+	const addItem = (e) => {
+		e.preventDefault();
+
+		dispatch(addItemToCart(id, smImage, heading, price));
+	};
+
+	const increaseAmount = (e) => {
+		e.preventDefault();
+
+		dispatch(increaseItemAmount(id, smImage, heading, price));
+	};
+
+	const decreaseAmount = (e) => {
+		e.preventDefault();
+
+		dispatch(decreaseItemAmount(id, smImage, heading, price));
+	};
 
 	return (
 		<div className="description">

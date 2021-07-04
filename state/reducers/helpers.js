@@ -15,6 +15,15 @@ export const addItemToCart = (state, action) => {
 
 export const modifyItemQuantity = (state, action, operation) => {
 	const { id } = action.payload;
+	const { items } = state;
+	const itemInCart = items.find((item) => item.id === id);
+
+	if (!itemInCart && operation === "increase") {
+		return {
+			...state,
+			items: [...state.items, { ...action.payload, quantity: 1 }]
+		};
+	}
 
 	if (state.items.length > 0) {
 		const items = state.items.map((el) => {
@@ -47,12 +56,11 @@ export const modifyItemQuantity = (state, action, operation) => {
 			...state,
 			items: newItems
 		};
-	} else if (operation === "increase") {
-		return {
-			...state,
-			items: [...state.items, { ...action.payload, quantity: 1 }]
-		};
 	}
 
 	return state;
+};
+
+export const changeCartDisplay = (action) => {
+	return action.display;
 };

@@ -1,0 +1,17 @@
+.cart-product {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 2fr;
+    column-gap: 2rem;
+  
+    &-img {
+  
+      width: 5rem;
+    }
+  
+  }
+
+  .cart-product-details .price {
+    margin-top: 1rem;
+  }
+  

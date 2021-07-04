@@ -1,6 +1,4 @@
 import React from "react";
-
-import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
 import Link from "next/link";
 
@@ -58,25 +56,20 @@ const QUERY = gql`
 	}
 `;
 
-const Details = () => {
-	const router = useRouter();
-	const { query } = router;
+const Details = ({ category, id }) => {
 	const casualContent = appData.casual;
 	const { data, loading } = useQuery(QUERY, {
 		variables: {
-			id: parseInt(query.id)
+			id: parseInt(id)
 		}
 	});
 
 	if (!loading) {
 		const product = data.getProduct;
-		// const productDetails = data.getProduct;
 
 		return (
 			<div className="details">
-				<Link
-					href={{ pathname: "/models", query: { category: query.category } }}
-				>
+				<Link href={{ pathname: "models", query: { category } }}>
 					<a className="details-back-link container">Go Back</a>
 				</Link>
 				<main>
@@ -92,6 +85,12 @@ const Details = () => {
 	}
 
 	return null;
+};
+
+export const getServerSideProps = async (ctx) => {
+	const { category, id } = ctx.query;
+
+	return { props: { category, id } };
 };
 
 export default Details;

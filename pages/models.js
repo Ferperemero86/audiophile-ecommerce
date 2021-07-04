@@ -1,6 +1,4 @@
 import React from "react";
-
-import { useRouter } from "next/router";
 import { useQuery, gql } from "@apollo/client";
 
 import Header from "../components/layout/header/Header";
@@ -26,15 +24,13 @@ const QUERY = gql`
 	}
 `;
 
-const Models = () => {
-	const router = useRouter();
-	const { query } = router;
-	const headerTitle = query.category.toUpperCase();
+const Models = ({ category }) => {
+	const headerTitle = category ? category.toUpperCase() : "";
 	const casualContent = appData.casual;
 
 	const { data, loading } = useQuery(QUERY, {
 		variables: {
-			category: query.category
+			category
 		}
 	});
 
@@ -57,6 +53,12 @@ const Models = () => {
 	}
 
 	return null;
+};
+
+export const getServerSideProps = async (ctx) => {
+	const { category } = ctx.query;
+
+	return { props: { category } };
 };
 
 export default Models;

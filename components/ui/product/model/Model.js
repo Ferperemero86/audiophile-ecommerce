@@ -28,7 +28,7 @@ const Model = ({ model, stylesClass }) => {
 		e.preventDefault();
 
 		router.push({
-			pathname: "/details",
+			pathname: "details",
 			query: { id, category }
 		});
 	};

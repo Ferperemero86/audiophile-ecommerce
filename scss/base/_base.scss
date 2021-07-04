@@ -32,6 +32,10 @@ a {
   overflow-x: hidden;
 }
 
+.wrapper-body {
+  //opacity: 0;
+}
+
 .container {
   width: 100%;
   @include padding-x('sm');

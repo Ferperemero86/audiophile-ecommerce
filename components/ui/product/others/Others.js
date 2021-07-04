@@ -11,7 +11,10 @@ const OthersItems = ({ others }) => {
 		const { image, name, category, id } = item;
 
 		const goToProductDetails = () =>
-			router.push({ pathname: "/details", query: { category, id } });
+			router.push({
+				pathname: "/details",
+				query: { category, id }
+			});
 
 		return (
 			<div className="others-item" key={idx}>

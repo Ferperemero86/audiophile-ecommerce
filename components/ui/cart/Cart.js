@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import {
 	increaseItemAmount,
-	decreaseItemAmount
+	decreaseItemAmount,
+	removeAllCartProducts
 } from "../../../state/actions/cart-actions";
 
 import CartProduct from "../cart/cart-product/CartProduct";
@@ -51,15 +52,23 @@ const CartProducts = () => {
 };
 
 const Cart = () => {
-	const products = useSelector((state) => state.cart.items);
+	const state = useSelector((state) => state.cart);
+	const products = state.items;
 	const total = products.reduce((a, b) => a + b.price * b.quantity, 0);
+	const dispatch = useDispatch();
+
+	const removeProducts = (e) => {
+		e.preventDefault();
+
+		dispatch(removeAllCartProducts());
+	};
 
 	return (
 		<div className="cart container">
 			<div className="cart-header">
 				<div className="cart-header-heading">
 					<h3 className="heading">CART</h3>
-					<p className="text">Remove all</p>
+					<Button label="Remove All" onClick={removeProducts} />
 				</div>
 				<div className="cart-body">
 					<div className="cart-body-products">

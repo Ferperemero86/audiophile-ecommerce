@@ -1,7 +1,11 @@
 import { actions } from "../actions";
 
-const { ADD_ITEM_TO_CART, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY } =
-	actions;
+const {
+	ADD_ITEM_TO_CART,
+	INCREASE_ITEM_QUANTITY,
+	DECREASE_ITEM_QUANTITY,
+	REMOVE_ALL_CART_PRODUCTS
+} = actions;
 
 export const addItemToCart = (id, image, heading, price) => {
 	return {
@@ -28,5 +32,12 @@ export const changeCartDisplay = (display) => {
 	return {
 		type: DECREASE_ITEM_QUANTITY,
 		payload: { display }
+	};
+};
+
+export const removeAllCartProducts = (products) => {
+	return {
+		type: REMOVE_ALL_CART_PRODUCTS,
+		payload: { products }
 	};
 };

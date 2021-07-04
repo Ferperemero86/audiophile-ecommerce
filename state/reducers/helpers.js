@@ -61,6 +61,10 @@ export const modifyItemQuantity = (state, action, operation) => {
 	return state;
 };
 
-export const changeCartDisplay = (action) => {
-	return action.display;
+export const changeCartDisplay = (state, action) => {
+	return { ...state, display: action.display };
+};
+
+export const removeAllCartProducts = (state) => {
+	return { ...state, items: [] };
 };

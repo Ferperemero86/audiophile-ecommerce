@@ -31,6 +31,11 @@
   &-cart {
 
     justify-self: end;
+
+    &:hover {
+
+      cursor: pointer;
+    }
   }
 
   @include breakpoint-up('md') {

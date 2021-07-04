@@ -68,3 +68,9 @@ export const changeCartDisplay = (state, action) => {
 export const removeAllCartProducts = (state) => {
 	return { ...state, items: [] };
 };
+
+export const showCart = (state) => {
+	const display = !state.display;
+
+	return { ...state, display };
+};

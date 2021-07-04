@@ -1,5 +1,6 @@
 import { actions } from "../actions";
 import {
+	showCart,
 	modifyItemQuantity,
 	addItemToCart,
 	changeCartDisplay,
@@ -7,6 +8,7 @@ import {
 } from "./helpers";
 
 const {
+	SHOW_CART,
 	ADD_ITEM_TO_CART,
 	INCREASE_ITEM_QUANTITY,
 	DECREASE_ITEM_QUANTITY,
@@ -21,6 +23,8 @@ const initialState = {
 
 export const cart = (state = initialState, action) => {
 	switch (action.type) {
+		case SHOW_CART:
+			return showCart(state);
 		case ADD_ITEM_TO_CART:
 			return addItemToCart(state, action);
 		case INCREASE_ITEM_QUANTITY:

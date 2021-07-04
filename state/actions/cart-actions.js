@@ -1,6 +1,7 @@
 import { actions } from "../actions";
 
 const {
+	SHOW_CART,
 	ADD_ITEM_TO_CART,
 	INCREASE_ITEM_QUANTITY,
 	DECREASE_ITEM_QUANTITY,
@@ -28,16 +29,15 @@ export const decreaseItemAmount = (id, image, heading, price) => {
 	};
 };
 
-export const changeCartDisplay = (display) => {
-	return {
-		type: DECREASE_ITEM_QUANTITY,
-		payload: { display }
-	};
-};
-
 export const removeAllCartProducts = (products) => {
 	return {
 		type: REMOVE_ALL_CART_PRODUCTS,
 		payload: { products }
+	};
+};
+
+export const showCart = () => {
+	return {
+		type: SHOW_CART
 	};
 };

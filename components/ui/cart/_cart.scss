@@ -7,7 +7,7 @@
   margin-top: 2rem;
   padding-bottom: 2rem;
   @include horizontal-alignment;
-  @include bg-color('third');
+  @include bg-color('second');
   z-index: 9999;
 
 
@@ -50,8 +50,8 @@
 }
 
 .cart-body-products .product-btn-el {
-  @include bg-color('primary');
-  @include color('third');
+  @include bg-color('third');
+  @include color('primary');
   display: inline-block;
   padding: 1rem;
 }

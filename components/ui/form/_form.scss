@@ -1,0 +1,47 @@
+.form-section {
+  margin-top: 2rem;
+
+  &-heading {
+    
+    @include color('fourth');
+  }
+
+  &-fields {
+    
+    margin-top: 1rem;
+  }
+}
+
+.form-section .section-field {
+  margin-top: 1rem;
+
+  &-title {
+    
+    margin-bottom: 0.5rem;
+    @include font-weight('md', $font-weights);
+  }
+
+}
+
+.input {
+  width: 100%;
+  @include b-radius(0.1rem);
+  border: 1px solid;
+  @include b-color('third');
+}
+
+.checkout-form .input {
+  padding: 0.5rem 0;
+}
+
+.section-field-option {
+  
+  &:not(:first-child) {
+    
+    margin-top: 0.5rem;
+  }
+}
+
+.option-label {
+  margin-right: 0.5rem;
+}

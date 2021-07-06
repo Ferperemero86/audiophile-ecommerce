@@ -197,5 +197,94 @@ export const appData = {
 			"https://res.cloudinary.com/dby4kdmbv/image/upload/v1623925682/audiophile/shared/desktop/uveu6ku3gpxllmgduvpo.jpg",
 		heading: "BRINGING YOU THE BEST AUDIO GEAR",
 		text: "Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment."
+	},
+	forms: {
+		checkout: [
+			{
+				title: "BILLING DETAILS",
+				fields: [
+					{
+						title: "Name",
+						type: "text",
+						kind: "name",
+						html: "input",
+						placeholder: "Jhon Doe"
+					},
+					{
+						title: "Email Address",
+						type: "email",
+						kind: "email",
+						html: "input",
+						placeholder: "jhondoe@gmail.com"
+					},
+					{
+						title: "Phone Number",
+						type: "number",
+						kind: "phone",
+						html: "input",
+						placeholder: "07555332211"
+					}
+				]
+			},
+			{
+				title: "SHIPPING INFO",
+				fields: [
+					{
+						title: "Your Address",
+						type: "text",
+						kind: "address",
+						html: "input",
+						placeholder: "9383 Main avenue"
+					},
+					{
+						title: "Post Code",
+						type: "number",
+						kind: "post-code",
+						html: "input",
+						placeholder: "se5 31e"
+					},
+					{
+						title: "City",
+						type: "text",
+						kind: "city",
+						html: "input",
+						placeholder: "London"
+					},
+					{
+						title: "Country",
+						type: "text",
+						kind: "country",
+						html: "input",
+						placeholder: "United Kingdom"
+					}
+				]
+			},
+			{
+				title: "PAYMENT DETAILS",
+				fields: [
+					{
+						title: "Payment method",
+						type: "radio",
+						kind: "payment-method",
+						html: "radio",
+						options: [{ label: "e-Money" }, { label: "Cash on Delivery" }]
+					},
+					{
+						title: "e-Money/Number",
+						type: "number",
+						kind: "e-money-number",
+						html: "input",
+						placeholder: "123456789"
+					},
+					{
+						title: "e-Money/PIN",
+						type: "number",
+						kind: "e-money-pin",
+						html: "input",
+						placeholder: "6891"
+					}
+				]
+			}
+		]
 	}
 };

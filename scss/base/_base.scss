@@ -32,22 +32,6 @@ a {
   overflow-x: hidden;
 }
 
-.blur {
-  
-  &::before {
-
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    opacity: 0.8;
-    @include bg-color('primary');
-  }
-}
-
 .container {
   width: 100%;
   @include padding-x('sm');
@@ -63,18 +47,23 @@ a {
     
 }
 
-.vertical-margin {
-  @include vertical-margin('sm');
 
+// Backgrounds
 
-  @include breakpoint-up('md') {
-    @include vertical-margin('md');
+.blur {
+
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.8;
+    @include bg-color('primary');
   }
-
-  @include breakpoint-up('lg') {
-    @include vertical-margin('lg');
-  }
-
 }
 
 
@@ -183,7 +172,7 @@ h4 {
 }
 
 .slide-in {
-  margin-left: 0rem;
+  margin-left: 0;
   transition: margin-left 0.3s ease-in-out;
 }
 
@@ -222,6 +211,32 @@ h4 {
     @include vertical-margin('lg');
   }
 
+}
+
+.vertical-margin {
+  @include vertical-margin('sm');
+
+
+  @include breakpoint-up('md') {
+    @include vertical-margin('md');
+  }
+
+  @include breakpoint-up('lg') {
+    @include vertical-margin('lg');
+  }
+
+}
+
+// Flow
+
+.o-flow-hidden {
+  overflow: hidden;
+}
+
+// Positions
+
+.fixed {
+  position: fixed;
 }
 
 

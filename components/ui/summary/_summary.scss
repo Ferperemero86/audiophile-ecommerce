@@ -1,0 +1,26 @@
+.summary-heading {
+  margin-bottom: 2rem;
+}
+
+.summary-products .cart-product {
+  margin-top: 1rem;
+}
+
+.summary-details-section {
+  display: flex;
+
+  &:first-child {
+    
+    margin-top: 2rem;
+  }
+  
+}
+
+.summary-details-section .text {
+  @include font-weight('md', $font-weights);
+  margin-right: 1rem;
+}
+
+.summary-details-section.grand-total {
+  margin-top: 2rem;
+}

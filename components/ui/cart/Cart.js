@@ -1,7 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useRouter } from "next/router";
 
 import {
+	showCart,
 	increaseItemAmount,
 	decreaseItemAmount,
 	removeAllCartProducts
@@ -56,11 +58,19 @@ const Cart = () => {
 	const products = state.items;
 	const total = products.reduce((a, b) => a + b.price * b.quantity, 0);
 	const dispatch = useDispatch();
+	const router = useRouter();
 
 	const removeProducts = (e) => {
 		e.preventDefault();
 
 		dispatch(removeAllCartProducts());
+	};
+
+	const goToCheckout = (e) => {
+		e.preventDefault();
+
+		dispatch(showCart(false));
+		router.push({ pathname: "/checkout" });
 	};
 
 	return (
@@ -79,7 +89,11 @@ const Cart = () => {
 						<span className="number">{`£ ${total}`}</span>
 					</div>
 				</div>
-				<Button label="CHECKOUT" stylesClass="cart-btn" />
+				<Button
+					label="CHECKOUT"
+					stylesClass="cart-btn"
+					onClick={goToCheckout}
+				/>
 			</div>
 		</div>
 	);

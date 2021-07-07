@@ -219,7 +219,7 @@ export const appData = {
 					},
 					{
 						title: "Phone Number",
-						type: "number",
+						type: "text",
 						kind: "phone",
 						html: "input",
 						placeholder: "07555332211"
@@ -238,8 +238,8 @@ export const appData = {
 					},
 					{
 						title: "Post Code",
-						type: "number",
-						kind: "post-code",
+						type: "text",
+						kind: "postcode",
 						html: "input",
 						placeholder: "se5 31e"
 					},

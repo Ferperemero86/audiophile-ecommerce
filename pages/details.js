@@ -1,6 +1,8 @@
 import React from "react";
-import { useQuery, gql } from "@apollo/client";
+import { gql } from "@apollo/client";
 import Link from "next/link";
+
+import client from "./api/graphql/client";
 
 import SectionFive from "../components/layout/sections/section-five/SectionFive";
 import SectionOne from "../components/layout/sections/section-one/SectionOne";
@@ -56,41 +58,38 @@ const QUERY = gql`
 	}
 `;
 
-const Details = ({ category, id }) => {
+const Details = ({ category, data }) => {
 	const casualContent = appData.casual;
-	const { data, loading } = useQuery(QUERY, {
-		variables: {
-			id: parseInt(id)
-		}
-	});
 
-	if (!loading) {
-		const product = data.getProduct;
+	const product = data.getProduct;
 
-		return (
-			<div className="details">
-				<Link href={{ pathname: "models", query: { category } }}>
-					<a className="details-back-link container">Go Back</a>
-				</Link>
-				<main>
-					<SectionFive product={product} stylesClass="container" />
-					<SectionOne stylesClass="vertical-margin container" />
-					<SectionThree
-						stylesClass="container vertical-margin"
-						content={casualContent}
-					/>
-				</main>
-			</div>
-		);
-	}
-
-	return null;
+	return (
+		<div className="details">
+			<Link href={{ pathname: "models", query: { category } }}>
+				<a className="details-back-link container">Go Back</a>
+			</Link>
+			<main>
+				<SectionFive product={product} stylesClass="container" />
+				<SectionOne stylesClass="vertical-margin container" />
+				<SectionThree
+					stylesClass="container vertical-margin"
+					content={casualContent}
+				/>
+			</main>
+		</div>
+	);
 };
 
 export const getServerSideProps = async (ctx) => {
-	const { category, id } = ctx.query;
+	const { category, id } = await ctx.query;
+	const idNumber = parseInt(id);
+	console.log("ID", typeof id);
+	const { data } = await client.query({
+		query: QUERY,
+		variables: { id: idNumber }
+	});
 
-	return { props: { category, id } };
+	return { props: { category, data } };
 };
 
 export default Details;

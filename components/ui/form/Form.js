@@ -1,11 +1,14 @@
 import React from "react";
 
-const Input = ({ type, placeholder }) => {
+import { validateFormField } from "../../../helpers/form-helpers";
+
+const Input = ({ type, placeholder, onChange, stylesClass }) => {
 	return (
 		<input
 			type={type}
 			placeholder={placeholder}
-			className="input section-field-input"
+			onChange={onChange}
+			className={`${stylesClass} section-field-input`}
 		/>
 	);
 };
@@ -25,11 +28,27 @@ const Radio = ({ options }) => {
 
 const Field = ({ field }) => {
 	const { title, type, kind, placeholder, html, options } = field;
+
+	const validateField = (e) => {
+		const value = e.target.value;
+		console.log("VALUE", value);
+		validateFormField(kind, value);
+	};
+
 	return (
 		<div className="section-field">
 			<p className="section-field-title">{title}</p>
-			{html === "input" && <Input type={type} placeholder={placeholder} />}
-			{html === "radio" && <Radio options={options} />}
+			{html === "input" && (
+				<Input
+					type={type}
+					placeholder={placeholder}
+					onChange={validateField}
+					stylesClass="input"
+				/>
+			)}
+			{html === "radio" && (
+				<Radio options={options} stylesClass="input-radio" />
+			)}
 		</div>
 	);
 };

@@ -12,9 +12,9 @@ const SummaryProducts = ({ items }) => {
 const Summary = () => {
 	const { items } = useSelector((state) => state.cart);
 	const total = items.reduce((a, b) => a + b.price * b.quantity, 0);
-	const vat = total * 0.2;
+	const vat = parseInt((total * 0.2).toFixed(2));
 	const shipping = 50;
-	const grandTotal = total + shipping + vat;
+	const grandTotal = total + vat + shipping;
 
 	return (
 		<div className="summary">

@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { validateFormField } from "../../../state/actions/form-actions";
+import { displayFieldValidationErrors } from "../../../helpers/form-helpers";
 
 const Input = ({ type, placeholder, onChange, stylesClass }) => {
 	return (
@@ -37,7 +38,9 @@ const Field = ({ field }) => {
 	const { title, type, kind, placeholder, html, options } = field;
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state.checkoutForm);
-	console.log("STATE", state);
+	const { validation } = state;
+
+	const error = displayFieldValidationErrors(validation, kind);
 
 	const validateField = (e) => {
 		const value = e.target.value;
@@ -62,6 +65,11 @@ const Field = ({ field }) => {
 					stylesClass="input-radio"
 					onChange={validateField}
 				/>
+			)}
+			{error && (
+				<p className="section-field-error-message">
+					Please enter a valid {kind}
+				</p>
 			)}
 		</div>
 	);

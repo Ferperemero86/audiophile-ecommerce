@@ -21,6 +21,11 @@
     @include font-weight('md', $font-weights);
   }
 
+  &-error-message {
+
+    color: red;
+  }
+
 }
 
 .input {

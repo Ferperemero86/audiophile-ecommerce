@@ -267,7 +267,10 @@ export const appData = {
 						type: "radio",
 						kind: "payment-method",
 						html: "radio",
-						options: [{ label: "e-Money" }, { label: "Cash on Delivery" }]
+						options: [
+							{ label: "e-Money", value: "e-money" },
+							{ label: "Cash on Delivery", value: "cash" }
+						]
 					},
 					{
 						title: "e-Money/Number",

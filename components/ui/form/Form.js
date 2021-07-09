@@ -1,6 +1,7 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-import { validateFormField } from "../../../helpers/form-helpers";
+import { validateFormField } from "../../../state/actions/form-actions";
 
 const Input = ({ type, placeholder, onChange, stylesClass }) => {
 	return (
@@ -13,14 +14,20 @@ const Input = ({ type, placeholder, onChange, stylesClass }) => {
 	);
 };
 
-const Radio = ({ options }) => {
+const Radio = ({ options, kind, onChange }) => {
 	return options.map((option, idx) => {
-		const { label } = option;
+		const { label, value } = option;
 
 		return (
 			<div className="section-field-option" key={idx}>
 				<label className="option-label">{label}</label>
-				<input type="radio" className="input-radio" />
+				<input
+					type="radio"
+					className="input-radio"
+					onChange={onChange}
+					name={kind}
+					value={value}
+				/>
 			</div>
 		);
 	});
@@ -28,11 +35,13 @@ const Radio = ({ options }) => {
 
 const Field = ({ field }) => {
 	const { title, type, kind, placeholder, html, options } = field;
+	const dispatch = useDispatch();
+	const state = useSelector((state) => state.checkoutForm);
+	console.log("STATE", state);
 
 	const validateField = (e) => {
 		const value = e.target.value;
-		console.log("VALUE", value);
-		validateFormField(kind, value);
+		dispatch(validateFormField(kind, value));
 	};
 
 	return (
@@ -47,7 +56,12 @@ const Field = ({ field }) => {
 				/>
 			)}
 			{html === "radio" && (
-				<Radio options={options} stylesClass="input-radio" />
+				<Radio
+					options={options}
+					kind={kind}
+					stylesClass="input-radio"
+					onChange={validateField}
+				/>
 			)}
 		</div>
 	);

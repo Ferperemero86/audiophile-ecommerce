@@ -6,28 +6,94 @@ const RegExp = {
 	postCode:
 		/^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})$/,
 	address: /^\d+\s[A-z]+$/,
-	city: /^[A-z]+$/
+	city: /^[A-z]+$/,
+	eMoney: /^\d{9}$/,
+	eMoneyPin: /^\d{4}$/
 };
 
-const { name, email, phone, address, postCode, city } = RegExp;
+const { name, email, phone, address, postCode, city, eMoney, eMoneyPin } =
+	RegExp;
 
-export const validateFormField = (kind, value) => {
-	// console.log(kind, value);
+export const validateFormField = (state, action) => {
+	const { kind, value } = action.payload;
+	let error;
+	let passed;
+
+	const checkRegExp = (kind) => {
+		console.log("inhelper", kind.test(value));
+		if (kind === "payment-method" && value) {
+			error = false;
+			passed = true;
+		} else if (kind === "payment-method" && !value) {
+			error = true;
+			passed = false;
+		} else {
+			if (!kind.test(value)) {
+				error = true;
+				passed = false;
+			} else {
+				error = false;
+				passed = true;
+			}
+		}
+	};
+
 	switch (kind) {
 		case "name":
-			return name.test(value);
+			checkRegExp(name);
+			return {
+				...state,
+				validation: { ...state.validation, name: { error, passed } }
+			};
 		case "email":
-			return email.test(value);
+			checkRegExp(email);
+			return {
+				...state,
+				validation: { ...state.validation, email: { error, passed } }
+			};
 		case "phone":
-			return phone.test(value);
+			checkRegExp(phone);
+			return {
+				...state,
+				validation: { ...state.validation, phone: { error, passed } }
+			};
 		case "address":
-			return address.test(value);
+			checkRegExp(address);
+			return {
+				...state,
+				validation: { ...state.validation, address: { error, passed } }
+			};
 		case "postcode":
-			return postCode.test(value);
+			checkRegExp(postCode);
+			return {
+				...state,
+				validation: { ...state.validation, postcode: { error, passed } }
+			};
 		case "city":
-			console.log("city", city.test(value));
-			return city.test(value);
+			checkRegExp(city);
+			return {
+				...state,
+				validation: { ...state.validation, city: { error, passed } }
+			};
+		case "payment-method":
+			checkRegExp("payment-method", value);
+			return {
+				...state,
+				validation: { ...state.validation, paymentMethod: { error, passed } }
+			};
+		case "e-money-number":
+			checkRegExp(eMoney, value);
+			return {
+				...state,
+				validation: { ...state.validation, moneyNumber: { error, passed } }
+			};
+		case "e-money-pin":
+			checkRegExp(eMoneyPin, value);
+			return {
+				...state,
+				validation: { ...state.validation, moneyPin: { error, passed } }
+			};
 		default:
-			return false;
+			return state;
 	}
 };

@@ -39,7 +39,6 @@ const Field = ({ field }) => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state.checkoutForm);
 	const { validation } = state;
-
 	const error = displayFieldValidationErrors(validation, kind);
 
 	const validateField = (e) => {

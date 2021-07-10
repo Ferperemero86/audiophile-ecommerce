@@ -7,5 +7,6 @@ export const actions = {
 };
 
 export const formActions = {
-	VALIDATE_FORM_FIELD: "VALIDATE_FORM_FIELD"
+	VALIDATE_FORM_FIELD: "VALIDATE_FORM_FIELD",
+	VALIDATE_FORM: "VALIDATE_FORM"
 };

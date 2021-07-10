@@ -1,7 +1,7 @@
 import { formActions } from "../actions";
 
-import { validateFormField } from "../../helpers/form-helpers";
-const { VALIDATE_FORM_FIELD } = formActions;
+import { validateFormField, validateForm } from "../../helpers/form-helpers";
+const { VALIDATE_FORM_FIELD, VALIDATE_FORM } = formActions;
 
 const checkoutInitialState = {
 	validation: {
@@ -15,14 +15,18 @@ const checkoutInitialState = {
 		paymentMethod: { passed: false, error: false },
 		moneyNumber: { passed: false, error: false },
 		moneyPin: { passed: false, error: false }
+	},
+	confirmation: {
+		display: false
 	}
 };
 
 export const checkoutForm = (state = checkoutInitialState, action) => {
-	console.log("inreducer", action, state);
 	switch (action.type) {
 		case VALIDATE_FORM_FIELD:
 			return validateFormField(state, action);
+		case VALIDATE_FORM:
+			return validateForm(state);
 		default:
 			return state;
 	}

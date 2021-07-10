@@ -7,7 +7,7 @@ const RegExp = {
 		/^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})$/,
 	address: /^\d+\s[A-z]+$/,
 	city: /^[A-z]+$/,
-	country: /^[A-z]{3}$/,
+	country: /^([A-z]+(\s)?){1,10}$/,
 	eMoney: /^\d{9}$/,
 	eMoneyPin: /^\d{4}$/
 };
@@ -122,6 +122,7 @@ export const displayFieldValidationErrors = (validation, kind) => {
 		postCode,
 		city,
 		country,
+		paymentMethod,
 		moneyNumber,
 		moneyPin
 	} = validation;
@@ -141,6 +142,8 @@ export const displayFieldValidationErrors = (validation, kind) => {
 			return city.error;
 		case "country":
 			return country.error;
+		case "payment-method":
+			return paymentMethod.error;
 		case "e-money-number":
 			return moneyNumber.error;
 		case "e-money-pin":
@@ -148,4 +151,27 @@ export const displayFieldValidationErrors = (validation, kind) => {
 		default:
 			return false;
 	}
+};
+
+export const validateForm = (state) => {
+	const { validation } = state;
+
+	const formPassed = Object.keys(validation)
+		.map((key) => {
+			if (!validation[key].passed) {
+				validation[key].error = true;
+			}
+
+			return validation[key].passed;
+		})
+		.every((val) => val === true);
+
+	if (formPassed) {
+		console.log("FORM PASSED!");
+		return { ...state, confirmation: { display: true } };
+	}
+
+	console.log("VALIDATION", validation);
+
+	return { ...state, validation };
 };

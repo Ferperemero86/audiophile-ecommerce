@@ -1,5 +1,14 @@
-.summary-heading {
-  margin-bottom: 2rem;
+.summary {
+  
+  &-heading {
+
+    margin-bottom: 2rem;
+  }
+
+  &-btn {
+    margin-top: 2rem;
+  }
+
 }
 
 .summary-products .cart-product {
@@ -24,3 +33,4 @@
 .summary-details-section.grand-total {
   margin-top: 2rem;
 }
+

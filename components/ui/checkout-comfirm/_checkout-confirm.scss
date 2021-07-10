@@ -1,0 +1,15 @@
+.checkout-confirm {
+  position: absolute;
+  z-index: 99;
+  color: white;
+
+  &-text {
+    
+    margin-top: 1rem;
+  }
+
+  &-btn {
+
+    margin-top: 2rem;
+  }
+}

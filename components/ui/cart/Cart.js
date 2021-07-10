@@ -69,8 +69,10 @@ const Cart = () => {
 	const goToCheckout = (e) => {
 		e.preventDefault();
 
-		dispatch(showCart(false));
-		router.push({ pathname: "/checkout" });
+		if (products.length > 0) {
+			dispatch(showCart(false));
+			router.push({ pathname: "/checkout" });
+		}
 	};
 
 	return (
@@ -82,7 +84,8 @@ const Cart = () => {
 				</div>
 				<div className="cart-body">
 					<div className="cart-body-products">
-						<CartProducts />
+						{products.length > 0 && <CartProducts />}
+						{products.length === 0 && <p>The cart is empty</p>}
 					</div>
 					<div className="cart-body-total">
 						<p className="text">TOTAL</p>

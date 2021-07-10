@@ -44,3 +44,30 @@
   }
   
 }
+
+
+// Vertical Menu //
+
+.main-menu-container {
+  position: relative;
+}
+
+.vertical-main-menu .categories {
+  position: absolute;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  @include horizontal-alignment;
+
+  .category {
+
+    margin-top: 0;
+  }
+
+
+  @include breakpoint-up('md') {
+    display: none;
+  }
+}
+

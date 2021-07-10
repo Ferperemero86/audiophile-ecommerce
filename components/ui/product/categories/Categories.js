@@ -35,9 +35,9 @@ const CategoriesList = () => {
 	});
 };
 
-const Categories = () => {
+const Categories = ({ stylesClass }) => {
 	return (
-		<div className="categories">
+		<div className={`categories ${stylesClass}`}>
 			<CategoriesList />
 		</div>
 	);

@@ -1,9 +1,10 @@
 import { formActions } from "../actions";
 
 import { validateFormField, validateForm } from "../../helpers/form-helpers";
-const { VALIDATE_FORM_FIELD, VALIDATE_FORM } = formActions;
+const { VALIDATE_FORM_FIELD, VALIDATE_FORM, RESET_FORM } = formActions;
 
 const checkoutInitialState = {
+	formValid: false,
 	validation: {
 		name: { passed: false, error: false },
 		email: { passed: false, error: false },
@@ -27,6 +28,8 @@ export const checkoutForm = (state = checkoutInitialState, action) => {
 			return validateFormField(state, action);
 		case VALIDATE_FORM:
 			return validateForm(state);
+		case RESET_FORM:
+			return { ...state, formValid: false };
 		default:
 			return state;
 	}

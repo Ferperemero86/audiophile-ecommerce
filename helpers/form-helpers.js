@@ -167,11 +167,8 @@ export const validateForm = (state) => {
 		.every((val) => val === true);
 
 	if (formPassed) {
-		console.log("FORM PASSED!");
-		return { ...state, confirmation: { display: true } };
+		return { ...state, confirmation: { display: true }, formValid: true };
 	}
-
-	console.log("VALIDATION", validation);
 
 	return { ...state, validation };
 };

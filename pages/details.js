@@ -83,7 +83,6 @@ const Details = ({ category, data }) => {
 export const getServerSideProps = async (ctx) => {
 	const { category, id } = await ctx.query;
 	const idNumber = parseInt(id);
-	console.log("ID", typeof id);
 	const { data } = await client.query({
 		query: QUERY,
 		variables: { id: idNumber }

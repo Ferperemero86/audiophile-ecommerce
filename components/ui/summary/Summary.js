@@ -1,9 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useRouter } from "next/router";
 
 import { validateForm } from "../../../state/actions/form-actions";
-import { removeAllCartProducts } from "../../../state/actions/cart-actions";
 
 import Button from "../button/Button";
 import CartProduct from "../cart/cart-product/CartProduct";
@@ -15,18 +13,19 @@ const SummaryProducts = ({ items }) => {
 };
 
 const Summary = () => {
-	const router = useRouter();
-	const { items } = useSelector((state) => state.cart);
+	const state = useSelector((state) => state);
+	const { cart } = state;
+	const { items } = cart;
 	const dispatch = useDispatch();
 	const total = items.reduce((a, b) => a + b.price * b.quantity, 0);
 	const vat = parseInt((total * 0.2).toFixed(2));
 	const shipping = 50;
 	const grandTotal = total + vat + shipping;
 
-	const checkFormValidation = () => {
+	const checkFormValidation = (e) => {
+		e.preventDefault();
+
 		dispatch(validateForm());
-		dispatch(removeAllCartProducts());
-		router.push("/checkout");
 	};
 
 	return (
@@ -34,7 +33,7 @@ const Summary = () => {
 			<h2 className="summary-heading">SUMMARY</h2>
 			<div className="summary-products">
 				{items.length > 0 && <SummaryProducts items={items} />}
-				{items.length === 0 && <p>No items in cart</p>}
+				{items.length === 0 && <p className="danger">No items in cart</p>}
 			</div>
 			<div className="summary-details">
 				<div className="summary-details-section">

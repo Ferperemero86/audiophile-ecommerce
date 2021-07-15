@@ -69,12 +69,16 @@
 }
 
 .vertical-main-menu .categories {
+  @extend .container;
+  width: 100%;
   position: absolute;
+  left: 0;
   z-index: 99;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
-  @include horizontal-alignment;
+  @include bg-color('primary');
+  padding: 2rem 0;
 
   .category {
 

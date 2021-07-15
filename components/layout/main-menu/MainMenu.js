@@ -19,8 +19,10 @@ const { mainMenu } = menus;
 const MainMenu = () => {
 	const dispatch = useDispatch();
 	const cartState = useSelector((state) => state.cart);
+	const menuState = useSelector((state) => state.menu);
 	const cartDisplay = cartState.display;
 	const cartItems = cartState.items;
+	const menuDisplay = menuState.mainMenu.display;
 
 	const displayCart = () => dispatch(showCart());
 
@@ -38,8 +40,8 @@ const MainMenu = () => {
 				</div>
 				{cartDisplay && <Cart />}
 			</div>
-			<div className="vertical-main-menu container">
-				<Categories stylesClass="container" />
+			<div className="vertical-main-menu">
+				{menuDisplay && <Categories stylesClass="container" />}
 			</div>
 		</div>
 	);

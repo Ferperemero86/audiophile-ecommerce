@@ -11,3 +11,7 @@ export const formActions = {
 	VALIDATE_FORM: "VALIDATE_FORM",
 	RESET_FORM: "RESET_FORM"
 };
+
+export const menuActions = {
+	DISPLAY_MAIN_MENU: "DISPLAY_MAIN_MENU"
+};

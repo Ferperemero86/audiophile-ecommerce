@@ -29,7 +29,11 @@ export const checkoutForm = (state = checkoutInitialState, action) => {
 		case VALIDATE_FORM:
 			return validateForm(state);
 		case RESET_FORM:
-			return { ...state, formValid: false };
+			return {
+				...state,
+				formValid: false,
+				validation: checkoutInitialState.validation
+			};
 		default:
 			return state;
 	}

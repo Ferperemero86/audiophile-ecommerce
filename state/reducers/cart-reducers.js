@@ -5,7 +5,7 @@ import {
 	addItemToCart,
 	changeCartDisplay,
 	removeAllCartProducts
-} from "./helpers";
+} from "../../helpers/cart-helpers";
 
 const {
 	SHOW_CART,

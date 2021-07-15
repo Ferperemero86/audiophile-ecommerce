@@ -7,7 +7,6 @@ const Hamburger = () => {
 	const dispatch = useDispatch();
 
 	const displayMenu = () => {
-		console.log("click");
 		dispatch(displayMainMenu());
 	};
 

@@ -3,7 +3,7 @@ import React from "react";
 import Description from "../../../ui/product/description/Description";
 import Features from "../../../ui/product/features/Features";
 import Includes from "../../../ui/product/includes/Includes";
-import Gallery from "../../../ui/product/Gallery/Gallery";
+import Gallery from "../../../ui/product/gallery/Gallery";
 import Others from "../../../ui/product/others/Others";
 
 const SectionFive = ({ product, stylesClass }) => {

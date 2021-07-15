@@ -22,7 +22,6 @@ const Checkout = () => {
 	const blur = items.length === 0 && display ? "blur" : "";
 
 	useEffect(() => {
-		console.log("STATE", state);
 		if (items.length === 0 && display === false) {
 			router.push("/");
 		}

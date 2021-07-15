@@ -18,7 +18,9 @@ const { mainMenu } = menus;
 
 const MainMenu = () => {
 	const dispatch = useDispatch();
-	const cartDisplay = useSelector((state) => state.cart.display);
+	const cartState = useSelector((state) => state.cart);
+	const cartDisplay = cartState.display;
+	const cartItems = cartState.items;
 
 	const displayCart = () => dispatch(showCart());
 
@@ -28,11 +30,12 @@ const MainMenu = () => {
 				<Hamburger />
 				<Img url={logo.url} stylesClass="main-menu-logo" />
 				<Menu links={mainMenu.links} stylesClass="main-menu-menu" />
-				<Img
-					url={cart.url}
-					stylesClass="main-menu-cart"
-					onClick={displayCart}
-				/>
+				<div className="main-menu-cart">
+					{cartItems.length > 0 && (
+						<span className="quantity">{cartItems.length}</span>
+					)}
+					<Img url={cart.url} onClick={displayCart} />
+				</div>
 				{cartDisplay && <Cart />}
 			</div>
 			<div className="vertical-main-menu container">

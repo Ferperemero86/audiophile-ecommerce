@@ -8,7 +8,12 @@ import CartProduct from "../cart/cart-product/CartProduct";
 
 const SummaryProducts = ({ items }) => {
 	return items.map((item, idx) => {
-		return <CartProduct product={item} key={idx} />;
+		return (
+			<div className="product" key={idx}>
+				<CartProduct product={item} />
+				<span className="product-quantity">x{item.quantity}</span>
+			</div>
+		);
 	});
 };
 
@@ -33,8 +38,8 @@ const Summary = () => {
 			<h2 className="summary-heading">SUMMARY</h2>
 			<div className="summary-products">
 				{items.length > 0 && <SummaryProducts items={items} />}
-				{items.length === 0 && <p className="danger">No items in cart</p>}
 			</div>
+			{items.length === 0 && <p className="danger">No items in cart</p>}
 			<div className="summary-details">
 				<div className="summary-details-section">
 					<p className="text">TOTAL</p>

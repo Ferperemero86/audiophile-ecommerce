@@ -15,6 +15,19 @@
   margin-top: 1rem;
 }
 
+.summary-products .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 30rem;
+
+  &-quantity {
+
+    @include color('fourth');
+  }
+
+}
+
 .summary-details-section {
   display: flex;
 

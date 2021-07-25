@@ -8,6 +8,11 @@
   @include bg-color('primary');
   z-index: 9999;
 
+  &-logo {
+
+    cursor: pointer;
+  }
+
   &-hamburger {
 
     margin-right: 2rem;

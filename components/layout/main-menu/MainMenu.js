@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 
 import { showCart } from "../../../state/actions/cart-actions";
@@ -30,7 +31,9 @@ const MainMenu = () => {
 		<div className="main-menu-container">
 			<div className="main-menu container">
 				<Hamburger />
-				<Img url={logo.url} stylesClass="main-menu-logo" />
+				<Link href="/">
+					<Img url={logo.url} stylesClass="main-menu-logo" />
+				</Link>
 				<Menu links={mainMenu.links} stylesClass="main-menu-menu" />
 				<div className="main-menu-cart">
 					{cartItems.length > 0 && (

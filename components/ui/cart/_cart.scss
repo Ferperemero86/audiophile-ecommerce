@@ -6,7 +6,7 @@
   padding-bottom: 2rem;
   @include horizontal-alignment;
   @include bg-color('second');
-  z-index: 9999;
+  z-index: -1;
 
 
   @include breakpoint-up('md') {
@@ -41,10 +41,15 @@
 }
 
 .cart-body .product {
-  display: flex;
   margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
+
+
+  @include breakpoint-up('md') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cart-body-products .product-btn-el {
@@ -52,6 +57,7 @@
   @include color('primary');
   display: inline-block;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 .cart-body-total {

@@ -6,7 +6,7 @@
   align-items: center;
   @include padding-y(2rem);
   @include bg-color('primary');
-  z-index: 999;
+  z-index: 9999;
 
   &-hamburger {
 
@@ -69,11 +69,10 @@
 }
 
 .vertical-main-menu .categories {
-  @extend .container;
   width: 100%;
   position: absolute;
   left: 0;
-  z-index: 99;
+  z-index: 9999;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
